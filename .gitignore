@@ -9,3 +9,8 @@ venv/
 build/
 dist/
 *.spec
+
+.DS_Store
+.idea/
+.vscode/
+*.log

@@ -19,6 +19,20 @@ def build_executable():
     print(f"Python: {sys.version}")
     print()
     
+    # Find chromedriver to bundle with the app
+    chromedriver_path = None
+    import shutil
+    chromedriver_path = shutil.which('chromedriver')
+    
+    if not chromedriver_path:
+        print("⚠ WARNING: chromedriver not found in PATH")
+        print("The app may not work without chromedriver installed.")
+        print("Install it with: brew install chromedriver")
+        print()
+    else:
+        print(f"✓ Found chromedriver: {chromedriver_path}")
+        print()
+    
     # PyInstaller command
     cmd = [
         "pyinstaller",
@@ -29,6 +43,10 @@ def build_executable():
         "--clean",  # Clean cache before building
         "scraper_gui.py"
     ]
+    
+    # Add chromedriver binary if found
+    if chromedriver_path and platform.system() == "Darwin":
+        cmd.insert(-1, f"--add-binary={chromedriver_path}:.")
     
     # On Windows, add icon if available
     if platform.system() == "Windows" and os.path.exists("icon.ico"):

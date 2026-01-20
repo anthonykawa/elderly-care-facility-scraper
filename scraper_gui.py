@@ -27,6 +27,7 @@ class ScraperGUI:
         self.output_dir_var = tk.StringVar(value=os.getcwd())
         self.is_scraping = False
         self.scraper = None
+        self.should_stop = False
         
         # Create GUI elements
         self.create_widgets()
@@ -189,6 +190,7 @@ class ScraperGUI:
         
         # Update UI state
         self.is_scraping = True
+        self.should_stop = False
         self.start_button.config(state=tk.DISABLED)
         self.stop_button.config(state=tk.NORMAL)
         self.city_entry.config(state=tk.DISABLED)
@@ -201,11 +203,19 @@ class ScraperGUI:
         
     def stop_scraping(self):
         """Stop the scraping process."""
-        if self.scraper:
+        if self.scraper and self.is_scraping:
             self.log_output("\n⚠ Stopping scraper... Please wait...")
             self.update_status("Stopping...")
-            # The scraper will be stopped when the driver quits
-            # The thread will notice and exit gracefully
+            self.update_progress("Stopping...")
+            self.should_stop = True
+            self.stop_button.config(state=tk.DISABLED)
+            
+            # Try to quit the driver to force immediate stop
+            try:
+                if self.scraper.driver:
+                    self.scraper.driver.quit()
+            except:
+                pass
             
     def run_scraper(self, city, output_dir):
         """Run the scraper (called in a separate thread)."""
@@ -335,6 +345,11 @@ class GUIElderlyFacilityScraper(ElderlyFacilityScraper):
                 return page_facilities
             
             for idx, url in enumerate(facility_urls, 1):
+                # Check if stop was requested
+                if self.gui.should_stop:
+                    self.gui.log_output("\n⚠ Scraping stopped by user")
+                    return page_facilities
+                
                 self.gui.update_progress(f"Scraping facility {idx}/{len(facility_urls)}...")
                 facility_data = self.scrape_facility_details(url)
                 if facility_data['Name']:
@@ -360,6 +375,11 @@ class GUIElderlyFacilityScraper(ElderlyFacilityScraper):
         page_num = 1
         
         while True:
+            # Check if stop was requested
+            if self.gui.should_stop:
+                self.gui.log_output("\n⚠ Scraping stopped by user")
+                break
+            
             self.gui.log_output(f"\n--- Scraping page {page_num} ---")
             self.gui.update_progress(f"Scraping page {page_num}...")
             page_facilities = self.scrape_results_page()
@@ -378,7 +398,8 @@ class GUIElderlyFacilityScraper(ElderlyFacilityScraper):
                 self.gui.log_output("No more pages to scrape.")
                 break
         
-        self.scraping_completed = True
+        if not self.gui.should_stop:
+            self.scraping_completed = True
     
     def append_to_csv(self, facilities, is_first_page=False):
         """Append facilities to CSV file after each page is scraped."""
@@ -406,26 +427,47 @@ class GUIElderlyFacilityScraper(ElderlyFacilityScraper):
         """Run the complete scraping process."""
         try:
             self.navigate_to_search()
+            
+            if self.gui.should_stop:
+                return
+            
             self.search_city()
+            
+            if self.gui.should_stop:
+                return
+            
             self.scrape_all_pages()
             
             if self.scraping_completed:
                 self.gui.log_output(f"\n✓ Scraping completed successfully! Total facilities: {len(self.facilities)}")
                 self.gui.log_output(f"Data saved to: {self.filename}")
+            elif self.gui.should_stop:
+                if self.facilities:
+                    self.gui.log_output(f"\n⚠ Scraping stopped! Partial data ({len(self.facilities)} facilities) saved to: {self.filename}")
         except Exception as e:
-            self.gui.log_output(f"\n✗ ERROR: An error occurred during scraping: {e}")
-            import traceback
-            self.gui.log_output(traceback.format_exc())
+            # Check if error is due to browser being closed (stop requested)
+            if self.gui.should_stop:
+                if self.facilities:
+                    self.gui.log_output(f"\n⚠ Scraping stopped! Partial data ({len(self.facilities)} facilities) saved to: {self.filename}")
+                else:
+                    self.gui.log_output(f"\n⚠ Scraping stopped by user")
+            else:
+                self.gui.log_output(f"\n✗ ERROR: An error occurred during scraping: {e}")
+                import traceback
+                self.gui.log_output(traceback.format_exc())
         finally:
-            if not self.scraping_completed:
+            if not self.scraping_completed and not self.gui.should_stop:
                 if self.facilities:
                     self.gui.log_output(f"\n⚠ WARNING: Scraping was interrupted! Partial data ({len(self.facilities)} facilities) saved to: {self.filename}")
                 else:
                     self.gui.log_output(f"\n✗ ERROR: Scraping failed - no data was collected.")
             
-            self.gui.log_output("\nClosing browser...")
-            self.gui.update_progress("Cleaning up...")
-            self.driver.quit()
+            try:
+                self.gui.log_output("\nClosing browser...")
+                self.gui.update_progress("Cleaning up...")
+                self.driver.quit()
+            except:
+                pass  # Browser may already be closed
 
 
 def main():

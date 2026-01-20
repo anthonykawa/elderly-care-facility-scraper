@@ -10,6 +10,7 @@ import time
 import re
 import argparse
 import os
+import shutil
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
@@ -48,7 +49,30 @@ class ElderlyFacilityScraper:
         chrome_options.add_argument("--window-size=1920,1080")
         
         # Initialize the driver
-        service = Service(ChromeDriverManager().install())
+        # Check if running as a frozen app (PyInstaller)
+        if getattr(sys, 'frozen', False):
+            # Running as bundled app - look for bundled chromedriver
+            if hasattr(sys, '_MEIPASS'):
+                # PyInstaller creates a temp folder and stores path in _MEIPASS
+                bundled_chromedriver = os.path.join(sys._MEIPASS, 'chromedriver')
+                if os.path.exists(bundled_chromedriver):
+                    service = Service(bundled_chromedriver)
+                else:
+                    # Fallback to system chromedriver
+                    chromedriver_path = shutil.which('chromedriver')
+                    if chromedriver_path:
+                        service = Service(chromedriver_path)
+                    else:
+                        raise RuntimeError(
+                            "ChromeDriver not found. Please install it:\n"
+                            "  brew install chromedriver"
+                        )
+            else:
+                service = Service()  # Let Selenium Manager handle it
+        else:
+            # Running as script - let Selenium Manager auto-download
+            service = Service()
+        
         self.driver = webdriver.Chrome(service=service, options=chrome_options)
         self.wait = WebDriverWait(self.driver, 10)
     

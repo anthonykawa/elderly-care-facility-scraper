@@ -1,0 +1,513 @@
+<html class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths js no-flexbox flexbox-legacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths" lang="en"><head><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+    <!--
+        Customize the content security policy in the meta tag below as needed. Add 'unsafe-inline' to default-src to enable inline JavaScript.
+        For details, see http://go.microsoft.com/fwlink/?LinkID=617521
+    -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Security-Policy" content="default-src *  data: gap: https://localhost http://localhost:59224 https://maps.googleapis.com http://www.ccld.ca.gov http://*.google-analytics.com https://*.google-analytics.com https://sectest.dss.ca.gov https://secure.dss.ca.gov https://www.google.com https://ssl.gstatic.com 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://use.fontawesome.com; font-src 'self' 'unsafe-inline' https://use.fontawesome.com; media-src *">
+    <script>document.write('<base href="' + document.location + '" />');</script><base href="https://www.ccld.dss.ca.gov/carefacilitysearch/">
+    <!-- TODONote  fix base href for appropiate deployment-->
+    <!--<base href="/TransparencyApp/" />-->
+
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=2, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <title>Social Services - Community Care Facility search</title>
+
+    <meta charset="utf-8">
+
+    <meta name="Author" content="Department of Social Services, State of California">
+    <meta name="Description" content="Care facility search">
+    <meta name="Keywords" content="California, government, elder care, child care">
+
+
+
+    <!-- http://t.co/dKP3o1e -->
+    <meta name="HandheldFriendly" content="True"> <!-- for Blackberry, AvantGo -->
+    <meta name="MobileOptimized" content="320"> <!-- for Windows mobile -->
+    <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0">
+
+
+    <!-- For all browsers -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--
+    Step 3
+    Select a color scheme:
+
+    <link rel="stylesheet" href="/CountySite/css/colorscheme_oceanside.css">
+    <link rel="stylesheet" href="/CountySite/css/colorscheme_orangecounty.css">
+    <link rel="stylesheet" href="/CountySite/css/colorscheme_pasorobles.css">
+    <link rel="stylesheet" href="/CountySite/css/colorscheme_santabarbara.css">
+    <link rel="stylesheet" href="/CountySite/css/colorscheme_sierra.css">
+    -->
+    <!-- county --><!--link rel="stylesheet" href="css/colorscheme_pasorobles_mod2.css"-->
+    <!-- public -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">-->
+    <link rel="stylesheet" href="css/colorscheme_santabarbara.css">
+
+
+    <link rel="stylesheet" media="print" href="css/print.css">
+    <!-- For progressively larger displays -->
+    <link rel="stylesheet" media="only screen and (min-width: 480px)" href="css/480.css">
+    <link rel="stylesheet" media="only screen and (min-width: 600px)" href="css/600.css">
+    <link rel="stylesheet" media="only screen and (min-width: 768px)" href="css/768.css">
+    <!-- <link rel="stylesheet" media="only screen and (min-width: 992px)" href="/css/992.css"> -->
+    <link rel="stylesheet" media="only screen and (min-width: 1280px)" href="css/1280.css">
+    <!-- For Retina displays -->
+    <!-- <link rel="stylesheet" media="only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5)" href="/css/2x.css"> -->
+    <!-- selectivizr.com, emulates CSS3 pseudo-classes and attribute selectors in Internet Explorer 6-8 -->
+    <!--[if (lt IE 9) & (!IEMobile)]>
+    <script src="/javascript/libs/selectivizr-min.js"></script>
+    <![endif]-->
+    <!-- modernizr.com, feature detection -->
+    <script src="scripts/libs/modernizr-2.0.6.min.js"></script>
+
+    <!-- For iPad 3-->
+    <link rel="apple-touch-icon" sizes="144x144" href="images/template2013/apple-touch-icon-144x144.png">
+    <!-- For iPhone 4 -->
+    <link rel="apple-touch-icon" sizes="114x114" href="images/template2013/apple-touch-icon-114x114.png">
+    <!-- For iPad 1-->
+    <link rel="apple-touch-icon" sizes="72x72" href="images/template2013/apple-touch-icon-72x72.png">
+    <!-- For iPhone 3G, iPod Touch and Android -->
+    <link rel="apple-touch-icon" href="images/template2013/apple-touch-icon-57x57.png">
+    <!-- For Nokia -->
+    <link rel="shortcut icon" href="images/template2013/apple-touch-icon-57x57.png">
+    <!-- For everything else -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <!--Microsoft. Activate ClearType. Use highest compatibility mode, enable Chrome Frame -->
+    <!--[if IE]>
+    <meta http-equiv="cleartype" content="on">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <![endif]-->
+    <!--[if lt IE 9]>
+    <script src="/javascript/libs/respond.min.js"></script>
+    <![endif]-->
+    <!-- Styles.Render("~/Content/themes/base/css") -->
+
+
+    <link href="css/select.css" rel="stylesheet"><!-- angular select style sheet-->
+    <link href="css/select2.css" rel="stylesheet"><!-- angular select style sheet-->
+    <link href="css/selectize.default.css" rel="stylesheet"><!-- angular select style sheet-->
+    <link href="css/angular-tooltips.css" rel="stylesheet"><!-- angular select style sheet-->
+    <!--    <link href="css/themes/sunny/jquery-ui-1.10.4.custom.css" rel="stylesheet" />-->
+
+    <link href="css/ReactTablecss/bootstrap-glyphicons.css" rel="stylesheet">
+    <link href="css/ReactTablecss/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/ReactTablecss/bootstrap.css" rel="stylesheet">
+    <link href="css/ReactTablecss/bootstrapSwitch.css" rel="stylesheet">
+
+    <!--<link href="css/jquery.qtip.css" rel="stylesheet" />
+    <link href="css/jquery.sBubble-0.1.1.css" rel="stylesheet" />
+
+    <link href="css/ReactTablecss/footable.core.min.css" rel="stylesheet" />-->
+    <!--link href="/CountySite/Content/site.css" rel="stylesheet" /-->
+    <!--   <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.css">-->
+    <!--<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/select2/3.4.5/select2.css">-->
+    <!--<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.8.5/css/selectize.default.css">-->
+
+    <link rel="stylesheet" href="css/transparency.css">
+
+    <script type="text/javascript" src="scripts/angular.js"></script>
+    <script type="text/javascript" src="scripts/angular-ui-router.min.js"></script>
+    <script type="text/javascript" src="scripts/angular-sanitize.min.js"></script>
+    <script type="text/javascript" src="scripts/angular-animate.min.js"></script>
+    <script type="text/javascript" src="scripts/angular-tooltips.js"></script>
+    <script type="text/javascript" src="scripts/select.min.js"></script> <!-- angular select-->
+    <script type="text/javascript" src="scripts/platformOverrides.js"></script>
+    <script type="text/javascript" src="scripts/ui-bootstrap-tpls-0.10.js"></script>
+    <script type="text/javascript" src="scripts/xml2json.js"></script>
+    <script type="text/javascript" src="javascript/GALocalStorage.js"></script>
+
+    <!--<script type="text/javascript" src="scripts/js.1.10/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>-->
+    <script type="text/javascript" src="javascript/Config.js"></script>
+    <script type="text/javascript" src="javascript/scripts.js"></script>
+    <script type="text/javascript" src="javascript/tree.js"></script>
+    <script type="text/javascript" src="javascript/index.js"></script>
+    <script type="text/javascript" src="javascript/GALocalStorage.js"></script>
+    <script type="text/javascript" src="javascript/transparencyApp.js"></script>
+
+    <script type="text/javascript" src="javascript/Controller/facListController.js"></script>
+    <script type="text/javascript" src="javascript/Controller/footerController.js"></script>
+    <script type="text/javascript" src="javascript/Controller/searchController.js"></script>
+    <script type="text/javascript" src="javascript/Controller/groupController.js"></script>
+    <script type="text/javascript" src="javascript/Controller/glossaryController.js"></script>
+    <script type="text/javascript" src="javascript/Controller/phoneHeaderController.js"></script>
+    <script type="text/javascript" src="javascript/Controller/facDetailController.js"></script>
+    <script type="text/javascript" src="javascript/Controller/emailController.js"></script>
+    <script type="text/javascript" src="javascript/Controller/downloadController.js"></script>
+    <script type="text/javascript" src="javascript/Controller/faqController.js"></script>
+    <script type="text/javascript" src="javascript/Controller/announcementController.js"></script>
+
+
+    <script type="text/javascript" src="scripts/modernizr-2.5.3.js"></script>
+
+<style type="text/css" media="">#navigation.phone_show_nav {	height:240px;}</style></head>
+
+
+<body ng-app="transparencyApp" class="clearfix ng-scope">
+   
+
+
+
+    <!-- ui-view-anchor --><div ui-view="" autoscroll="false" class="" style=""><!-- ui-view-anchor --><div ui-view="header" autoscroll="false" class="ng-scope"><div ng-controller="phone_hdrController" class="ng-scope">
+    <header role="banner" class="phoneHeader">
+        <div id="skip_to_content"><a href="#main_content">Skip to Main Content</a></div>
+
+
+        <div class="phone_hdr" ng-click="menu_click()">
+            <div class="phone_hd_left">
+                <a class="p_h_button p_h_menu" id="ResponsiveMenu" ng-click="toggle = !toggle"><img src="images/template2013/clear.gif" alt="Menu"></a>
+            </div>
+            <div class="phone_hd_right">
+                <a class="p_h_button p_h_contact" href="/FacilityInquiry.html"><img src="images/template2013/clear.gif" alt="Contact Us"></a>
+                <a class="p_h_button p_h_search" id="ResponsiveSearch" ng-click="toggle_search()"><img src="images/template2013/clear.gif" alt="Search"></a>
+            </div>
+            <div class="logo_and_banner">
+                <div class="head_cagov_logo"><a target="_blank" href="http://www.ca.gov/"><img src="images/template2013/header-ca.gov.png" alt="CA.gov"></a></div>
+                <div class="head_organization_banner"><a target="_blank" href="http://www.cdss.ca.gov/"><img src="images/template2013/header_organization.png" alt="Organization Title"></a></div>
+            </div>
+        </div>
+
+
+        <!-- Using padding alternative to replace the DownloadData Menu option by Victor Wong 2/4/2015	-->
+        <nav id="navigation" ng-class="{phone_show_nav: toggle}">
+            <!-- ngIf: TransparencyMode == 'Public' --><div ng-if="TransparencyMode == 'Public'" class="ng-scope">
+                <ul id="nav_list">
+                    <li><a ui-sref="index" class="nav_level1_link" href="/"><span id="nav_home_container"></span><img src="images/template2013/clear.gif" alt="Home">&nbsp;</a></li>
+                    <li class="homeLink"><a ui-sref="index" class="nav_level1_link" href="/">Home</a></li>
+                    <li><a ui-sref="downloaddata" class="nav_level1_link" href="/DownloadData">Download Data</a></li>
+                    <li><a href="https://cdss.ca.gov/inforesources/community-care-licensing" target="_blank" class="nav_level1_link">State Offices</a></li>
+                    <li><a ui-sref="faqlist({id:'full'})" class="nav_level1_link" href="/FAQList/full">FAQ</a></li>
+                    <li><a ui-sref="glossary" class="nav_level1_link" href="/Glossary">Glossary</a></li>
+                </ul>
+            </div><!-- end ngIf: TransparencyMode == 'Public' -->
+            <!-- ngIf: TransparencyMode == 'County' -->
+        </nav>
+
+        <div id="img_ribbon"></div>
+    </header>
+    <div ng-class="spacerclass" class="menucollapsed"></div>
+</div></div>
+
+<!-- ui-view-anchor --><div ui-view="main" autoscroll="false" class="ng-scope"><div id="main_content" class="clearfix ng-scope" ng-controller="groupController as gctrl">
+
+    <div class="content_left_column clearfix">
+
+        <div class="add_maincontent_padding">
+            <!-- InstanceBeginEditable name="MainContent" -->
+            <div class="container_style_b ng-scope" ng-controller="announcementController as actrl">
+                <h4>Announcements</h4>
+                <!-- ngRepeat: a in actrl.Messages --><span ng-repeat="a in actrl.Messages" class="ng-scope" style=""><strong>New:&nbsp;&nbsp;</strong><span ng-bind-html="a.Message" class="ng-binding">The Transparency Website has a new search feature that allows users to view the types of care services provided by each licensee across the following CCLD programs: Adult &amp; Senior Care, Child Care, Children’s Residential, and Home Care Services. This feature is available on the Transparency Website home page under ‘Search by License Name’ field. Users must enter the Exact Licensee Name in the Facility Search by Licensee Name box.  The exact names can be located by using the ‘Download Data’ feature located at the top of the page.</span><br></span><!-- end ngRepeat: a in actrl.Messages --><span ng-repeat="a in actrl.Messages" class="ng-scope"><strong>New:&nbsp;&nbsp;</strong><span ng-bind-html="a.Message" class="ng-binding">The Download Data feature is now available on the Transparency site.
+</span><br></span><!-- end ngRepeat: a in actrl.Messages --><span ng-repeat="a in actrl.Messages" class="ng-scope"><strong>New:&nbsp;&nbsp;</strong><span ng-bind-html="a.Message" class="ng-binding">The Transparency Website has a new feature that allows users to view facility license comments called Facility Comment, which is located on the Facility Details page. The Facility Comment feature will be available for Child Care – Infant Center, School Age Child Care Center, Child Care Center, Child Care Center Preschool, Single Licensed Child Center, and Home Care Organization.  </span><br></span><!-- end ngRepeat: a in actrl.Messages --><span ng-repeat="a in actrl.Messages" class="ng-scope"><strong>New:&nbsp;&nbsp;</strong><span ng-bind-html="a.Message" class="ng-binding">If you are searching for care in the impacted area due to the Los Angeles and/or Ventura County Fires, please also reach out to your local Resource and Referral Agency for child care or alternative placement agencies for residential care.</span><br></span><!-- end ngRepeat: a in actrl.Messages --><span ng-repeat="a in actrl.Messages" class="ng-scope"><strong>New:&nbsp;&nbsp;</strong><span ng-bind-html="a.Message" class="ng-binding">We are working to reflect (860) Single Licensed Childcare Centers, if there is a need to conduct a file review, please contact the local regional office or the Centralized Complaint and Information Bureau @ letusno@dss.ca.gov.</span><br></span><!-- end ngRepeat: a in actrl.Messages --><span ng-repeat="a in actrl.Messages" class="ng-scope"><strong>New:&nbsp;&nbsp;</strong><span ng-bind-html="a.Message" class="ng-binding">The Transparency Website has a new feature that allows users to search for closed facilities. To search for closed facilities the user will need to enter a 9-digit facility number and click on the search button located below. Otherwise the information can be found in the Download Data feature.</span><br></span><!-- end ngRepeat: a in actrl.Messages --><span ng-repeat="a in actrl.Messages" class="ng-scope"><strong>New:&nbsp;&nbsp;</strong><span ng-bind-html="a.Message" class="ng-binding">California law has changed. The term “unsubstantiated” will be used for allegations that don’t have enough evidence to prove that they happened. In the past, these were called “inconclusive.” See Provider Information Notice (PIN) 17-02 available under the CCLD section of the website for more information. </span><br></span><!-- end ngRepeat: a in actrl.Messages -->
+            </div>
+            <div class="container_style_b">
+                <!-- Facility Number Search -->
+
+            </div>
+            <div class="container_style_b ng-scope" ng-controller="searchController as sctrl">
+                <h4>Search By Open or Closed Facility Number</h4>
+                <form ng-submit="sctrl.searchSubmit()" class="ng-pristine ng-invalid ng-invalid-required ng-valid-pattern ng-valid-maxlength">
+                    <div class="centeredRow">
+                        <input class="centeredRowItem2 ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required ng-valid-pattern ng-valid-maxlength" type="text" placeholder="Must contain 9 digits" pattern="[0-9]{9,9}" maxlength="9" required="" title="Facility number must contain 9 digits from 0 to 9" ng-model="sctrl.FacilityNumber">
+                        <input type="submit" class="btn btn-lg btn-default centeredRowButton" name="submit" value="Search">
+                    </div>
+                </form>
+            </div>
+            <div class="container_style_b ng-scope" ng-controller="searchController as sctrl">
+                <h4>Search by Licensee Name</h4>
+                <form ng-submit="sctrl.searchSubmit()" class="ng-pristine ng-invalid ng-invalid-required">
+                    <div class="centeredRow">
+                        <input class="centeredRowItem2 ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required" type="text" placeholder="Enter Exact Licensee Name" ng-model="sctrl.Licensee" required="" title="Enter the name of the licensee">
+                        <input type="submit" class="btn btn-lg btn-default centeredRowButton" name="submit" value="Search">
+                    </div>
+                </form>
+            </div>
+            <div class="container_style_b">
+                <h4>Search By Facility Group</h4>
+                <span ng-show="!gctrl.isLoaded" class="ng-hide" style=""><img class="spinnerimg" src="images/spinner.gif" alt="Loading, please wait">Please wait, loading data</span>
+                <ul ng-show="gctrl.isLoaded" style="list-style-type: none;" class="">
+                    <!-- ngRepeat: group in gctrl.facility_groups --><li ng-repeat="group in gctrl.facility_groups" class="ng-scope" style=""><button name="fselector" id="fselectorFosterFamilyAgencies" class="button awesome ng-binding" value="FosterFamilyAgencies" ui-sref="search({groupId: group.id})">Foster Family Agencies and Foster Family Sub-Agencies</button></li><!-- end ngRepeat: group in gctrl.facility_groups --><li ng-repeat="group in gctrl.facility_groups" class="ng-scope"><button name="fselector" id="fselectorTwentyFourHourResChildren" class="button awesome ng-binding" value="TwentyFourHourResChildren" ui-sref="search({groupId: group.id})">24 Hour Residential Care for Children</button></li><!-- end ngRepeat: group in gctrl.facility_groups --><li ng-repeat="group in gctrl.facility_groups" class="ng-scope"><button name="fselector" id="fselectorAdultResidentialAndDaycare" class="button awesome ng-binding" value="AdultResidentialAndDaycare" ui-sref="search({groupId: group.id})">Adult Residential and Daycare</button></li><!-- end ngRepeat: group in gctrl.facility_groups --><li ng-repeat="group in gctrl.facility_groups" class="ng-scope"><button name="fselector" id="fselectorElderlyAssistedLiving" class="button awesome ng-binding" value="ElderlyAssistedLiving" ui-sref="search({groupId: group.id})">Elderly Assisted Living</button></li><!-- end ngRepeat: group in gctrl.facility_groups --><li ng-repeat="group in gctrl.facility_groups" class="ng-scope"><button name="fselector" id="fselectorChildCare" class="button awesome ng-binding" value="ChildCare" ui-sref="search({groupId: group.id})">Child Care</button></li><!-- end ngRepeat: group in gctrl.facility_groups --><li ng-repeat="group in gctrl.facility_groups" class="ng-scope"><button name="fselector" id="fselectorHomeCareOrg" class="button awesome ng-binding" value="HomeCareOrg" ui-sref="search({groupId: group.id})">Home Care Organization</button></li><!-- end ngRepeat: group in gctrl.facility_groups --><li ng-repeat="group in gctrl.facility_groups" class="ng-scope"><button name="fselector" id="fselectorAdoptionAgencies" class="button awesome ng-binding" value="AdoptionAgencies" ui-sref="search({groupId: group.id})">Adoption Agencies</button></li><!-- end ngRepeat: group in gctrl.facility_groups -->
+                    <li><button name="fselector" id="searchButton" class="button awesome" value="" ui-sref="search({groupId: group.id})">All Facility Types</button></li>
+                </ul>
+
+            </div>
+            <site-header back="[Back]" class="ng-isolate-scope"><a class="ng-binding">[Back]</a></site-header>
+            <!-- [<a href="/CountySite/home/index">New Search</a>]&nbsp; -->
+            <!-- InstanceEndEditable -->
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ui-view-anchor --><div ui-view="right" autoscroll="false"><div class="content_right_column clearfix ng-scope">
+    <!-- InstanceBeginEditable name="ContentRightColumn" -->
+
+
+
+
+
+    <style>
+        #accordion {
+            list-style: none;
+            padding: 0 0 0 0;
+            width: 95%;
+        }
+
+            #accordion div {
+                display: block;
+                font-weight: bold;
+                margin: 5px 5px;
+                cursor: pointer;
+                padding: 2px 2px 2px 2px;
+                list-style: circle;
+            }
+
+            #accordion ul {
+                list-style: none;
+                padding: 0 0 0 0;
+            }
+
+            #accordion ul {
+                /*display: none;*/
+            }
+
+                #accordion ul li {
+                    font-weight: normal;
+                    cursor: auto;
+                    background-color: #fff;
+                    padding: 0 0 0 2px;
+                }
+
+            #accordion a {
+                text-decoration: none;
+            }
+
+        /* #accordion a:hover {    text-decoration: underline;} */
+
+        /* Resource Corner Links */
+
+        .transparency-accordion {
+            list-style: none;
+            padding: 0 0 0 0;
+            width: 95%;
+        }
+
+            .transparency-accordion div {
+                display: block;
+                font-weight: bold;
+                margin: 5px 5px;
+                cursor: pointer;
+                padding: 2px 2px 2px 2px;
+                list-style: circle;
+            }
+
+            .transparency-accordion ul {
+/*                list-style: none;
+*/                padding: 0 0 0 0;
+            }
+
+            .transparency-accordion ul {
+                /*display: none;*/
+            }
+
+                .transparency-accordion ul li {
+                    font-weight: normal;
+                    cursor: auto;
+                    background-color: #fff;
+                    padding: 0 0 0 2px;
+                }
+
+            .transparency-accordion a {
+                text-decoration: none;
+            }
+
+            .transparency-accordion b {
+                margin-top: 1em;
+            }
+
+            .transparency-accordion p {
+                margin-top: 1em;
+                font-weight: normal;
+            }
+
+    </style>
+
+
+    <!-- ngIf: showBanner --><div ng-if="showBanner" class="container_style_banner ng-scope">
+        <div class="container_banner_image">
+            <div class="banner_subtitle"><a href="https://cdss.ca.gov/inforesources/community-care-licensing" target="_blank">Community Care Licensing Division</a></div>
+            <img src="images/KevinGaines.jpg" alt="Kevin Gaines">
+            <div class="banner_title">Kevin Gaines</div>
+        </div>
+    </div><!-- end ngIf: showBanner -->
+
+    <!-- code sections below are a central instructon file rendered from the page title -->
+    <div ng-show="showFAQ" class="container_style_d">
+        <h5 style="color:White" class="ng-binding">Facility Group FAQ</h5>
+        <div class="add_side_padding">
+
+            <!-- ui-view-anchor --><div ui-view="MyAccordianView" autoscroll="false"><!--http://jsfiddle.net/3sVz8/19/-->
+<div ng-controller="faqController as faqCtrl" class="ng-scope">
+    <ul id="accordion">
+        <!-- ngRepeat: item in faqCtrl.json track by $index --><!-- ngIf: faqCtrl.json.length !== undefined --><li ng-if="faqCtrl.json.length !== undefined" ng-repeat="item in faqCtrl.json track by $index" class="ng-scope" style="">
+            <div slide-toggle="#derp0" class="ng-binding"><img src="images/template2013/bullet_blue_disc.png" alt="Blue Disk"> Where can I find the facility definitions?</div>
+            <div id="derp0" class="slideable" style="overflow: hidden; height: 0px; transition-property: height; transition-duration: 250ms; transition-timing-function: ease-in-out;"><div class="slideable_content" style="margin:0 !important; padding:0 !important"><ul><li ng-bind-html="item.answer" class="ng-binding">See the Glossary link at the top.</li></ul></div></div>
+        </li><!-- end ngIf: faqCtrl.json.length !== undefined --><!-- end ngRepeat: item in faqCtrl.json track by $index --><!-- ngIf: faqCtrl.json.length !== undefined --><li ng-if="faqCtrl.json.length !== undefined" ng-repeat="item in faqCtrl.json track by $index" class="ng-scope">
+            <div slide-toggle="#derp1" class="ng-binding"><img src="images/template2013/bullet_blue_disc.png" alt="Blue Disk"> Where can I find out more about how facilities are regulated in California?</div>
+            <div id="derp1" class="slideable" style="overflow: hidden; height: 0px; transition-property: height; transition-duration: 250ms; transition-timing-function: ease-in-out;"><div class="slideable_content" style="margin:0 !important; padding:0 !important"><ul><li ng-bind-html="item.answer" class="ng-binding"> Please visit the <a href="https://cdss.ca.gov/inforesources/community-care-licensing/" target="_blank"> Community Care Licensing</a> website. </li></ul></div></div>
+        </li><!-- end ngIf: faqCtrl.json.length !== undefined --><!-- end ngRepeat: item in faqCtrl.json track by $index --><!-- ngIf: faqCtrl.json.length !== undefined --><li ng-if="faqCtrl.json.length !== undefined" ng-repeat="item in faqCtrl.json track by $index" class="ng-scope">
+            <div slide-toggle="#derp2" class="ng-binding"><img src="images/template2013/bullet_blue_disc.png" alt="Blue Disk"> How do I file a complaint against a licensee/facility?</div>
+            <div id="derp2" class="slideable" style="overflow: hidden; height: 0px; transition-property: height; transition-duration: 250ms; transition-timing-function: ease-in-out;"><div class="slideable_content" style="margin:0 !important; padding:0 !important"><ul><li ng-bind-html="item.answer" class="ng-binding">To file a complaint against a facility licensed by the California Department of Social Services, you can contact our Centralized Complaint and
+       Information Bureau at <a href="tel:1-844-538-8766">1-844-538-8766</a>, or by email at <a href="mailto:letusno@dss.ca.gov">letusno@dss.ca.gov</a>.  You can remain anonymous if you wish. <br>For additional information regarding
+       filing a complaint, please visit the following webpage: <a href="http://www.cdss.ca.gov/inforesources/CCLD-Complaint-Hotline/" target="_blank">http://www.cdss.ca.gov/inforesources/CCLD-Complaint-Hotline/</a>.
+       </li></ul></div></div>
+        </li><!-- end ngIf: faqCtrl.json.length !== undefined --><!-- end ngRepeat: item in faqCtrl.json track by $index -->
+        <!-- ngIf: faqCtrl.json.length === undefined -->
+     </ul>
+</div></div>
+
+        </div>
+    </div>
+
+    <!-- Resource Corner Links -->
+
+    <div class="container_style_d">
+        <h5 style="color:White">Consumer and Family Resources</h5>
+        <ul class="transparency-accordion">
+            <li>
+                <div slide-toggle="#contentResCorner"><img src="images/template2013/bullet_blue_disc.png" alt="Blue Disk"> Click to show/hide</div>
+                <div id="contentResCorner" class="slideable" style="margin-left: 1em; overflow: hidden; height: 0px; transition-property: height; transition-duration: 250ms; transition-timing-function: ease-in-out;"><div class="slideable_content" style="margin:0 !important; padding:0 !important">
+                    <p><b>Child Care Program</b></p>
+                    <p>Home Pages</p>
+                    <ul>
+                        <li><a href="https://www.cdss.ca.gov/inforesources/community-care-licensing" target="_blank">Community Care Licensing Division(CCLD) page</a></li>
+                        <li><a href="https://www.cdss.ca.gov/inforesources/child-care-licensing" target="_blank">Child Care Licensing Page(CCL)</a></li>
+                        <li><a href="https://mychildcareplan.org/" target="_blank">My Child Care Plan</a></li>
+                        <li><a href="https://www.cdss.ca.gov/inforesources/child-care-licensing/child-care-advocates" target="_blank">Child Care Advocates</a></li>
+                        <li><a href="https://www.cdss.ca.gov/Portals/9/Additional-Resources/Research-and-Data/DSSDS/030119%20Parent's%20Guide%20to%20Choosing%20Child%20Care_Revision%20Safe%20Sleep.pdf" target="_blank">Parents Guide to Choosing Child Care</a></li>
+                    </ul>
+                    <p>Checklists</p>
+                    <ul>
+                        <li>Facility Inspection checklists are forms provided to the public so as to better understand the Community Care Licensing inspection process.</li>
+                        <li><a href="https://www.cdss.ca.gov/inforesources/forms-brochures/forms-alphabetic-list/i-l" target="_blank">On-line Forms and Publications</a></li>
+                    </ul>
+                    <p>Child Care Pre-Licensing and Standard Inspection Tools</p>
+                    <ul>
+                        <li>Child Care Pre-Licensing Tools are forms provided to the public so as to better prepare individuals for a Pre-Licensing inspection by a Licensing Program Analyst (LPA) with the Community Care Licensing Division.</li>
+                        <li>Child Care Standards Tools are forms provided to the public so as to better prepare an individual for a compliance inspection conducted by a Licensing Program Analyst (LPA) with the Community Care Licensing Division.</li>
+                        <li><a href="https://www.cdss.ca.gov/inforesources/cdss-programs/community-care-licensing/inspection-process-project/care-tools" target="_blank">Compliance and Regulatory Enforcement (CARE) Tools</a></li>
+                    </ul>
+
+                    <p><b>Children’s Residential Program</b></p>
+                    <ul>
+                        <li><a href="https://www.cdss.ca.gov/inforesources/childrens-residential" target="_blank">Children’s Residential Program Homepage</a></li>
+                        <li><a href="https://www.cdss.ca.gov/inforesources/childrens-residential/resources-for-providers/facility-information" target="_blank">Children’s Residential Facility Types</a></li>
+                        <li><a href="https://www.cdss.ca.gov/inforesources/cdss-programs/community-care-licensing/inspection-process-project/care-tools" target="_blank">Childrens Residential Pre-Licensing and Standard Inspection Tools</a></li>
+                    </ul>
+
+                    <p><b>Adult and Senior Care Program</b></p>
+                    <ul>
+                        <li><a href="https://www.cdss.ca.gov/inforesources/adult-care-licensing" target="_blank">Adult Care Home Page</a></li>
+                        <li><a href="https://www.cdss.ca.gov/inforesources/senior-care-licensing" target="_blank">Senior Care Home Page</a></li>
+                    </ul>
+
+                    <p><b>Home Care Services Branch</b></p>
+                    <ul>
+                        <li><a href="https://www.cdss.ca.gov/inforesources/community-care/home-care-services" target="_blank">Home Care Services Branch (home page)</a></li>
+                        <li><a href="https://www.cdss.ca.gov/inforesources/community-care/home-care-services/resources-for-home-care-organizations" target="_blank">Resources for Home Care Organizations</a></li>
+                        <li><a href="https://www.cdss.ca.gov/inforesources/community-care/home-care-services/resources-for-home-care-aides" target="_blank">Resources for Home Care Aides</a></li>
+                        <li><a href="https://www.cdss.ca.gov/inforesources/community-care/home-care-services/resources-for-seniors-and-families" target="_blank">Resources for Seniors and Families</a></li>
+                        <li><a href="https://www.ccld.dss.ca.gov/hcsregistry/registrysearch.aspx" target="_blank">Home Care Aide Registry</a></li>
+                    </ul>
+                </div></div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- PAGE DISCLAIMER -->
+
+    <div class="container_style_e">
+        <h5>Disclaimer</h5>
+        <div class="add_side_padding">
+
+            <b>Questions about this application contact:</b>
+            <ul style="padding-left: 10px;">
+
+                <li>Email: <a href="mailto:cclwebmaster@dss.ca.gov">cclwebmaster@dss.ca.gov</a></li>
+
+            </ul>
+
+            <br>
+            The Community Care Licensing Division of the California Department of Social Services has provided this document search application to provide the public with access to
+            information regarding facilities licensed by the Division.  Such information should only serve as an initial point of inquiry regarding the licensing status and regulatory
+            history of a licensed facility.  To obtain additional information concerning a specific facility, please contact the licensing office responsible for licensing and
+            inspection of the facility.<br>
+            <br>
+            The Department makes no claims, promises, or guarantees about the accuracy, completeness or adequacy of the documents accessible through the use of this application.
+            Accordingly, it disclaims any liability for any errors, omissions or misrepresentations contained in them.  No warranty of any kind, including, but not limited to, express,
+            implied, common law or statutory ones, is given with respect to the use of this application.   No warranties are given with respect to the non-infringement of third party
+            rights and the cybersecurity of the application. <br>
+            <br>
+            <strong>LIMITATION OF LIABILITY </strong><br>
+            CDSS IS NOT LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL OR CONSEQUENTIAL DAMAGES THAT RESULT FROM THE USE OF, OR THE INABILITY TO USE, THIS APPLICATION OR RELIANCE
+            UPON THE CONTENT OF THE MATERIALS ACCESSIBLE THROUGH THE USE OF THIS APPLICATION UNDER ANY CIRCUMSTANCES.<br>
+            <br>
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <!-- InstanceEndEditable -->
+</div>
+</div>
+
+
+</div>
+<!--include virtual="/ssi/footer_2.html" -->
+
+<!-- ui-view-anchor --><div ui-view="footer" autoscroll="false" class="ng-scope"><!--include virtual="/ssi/footer_2.html" -->
+
+<footer id="footer_2" class="clearfix ng-scope" ng-controller="footerController">
+    <stt-class>
+        <a ng-click="scrollToTop(1)">Back to Top</a> <a href="http://www.cdss.ca.gov/Conditions-of-Use">Conditions of Use</a> <a href="http://www.cdss.ca.gov/Privacy-Policy">Privacy Policy</a> <a href="http://www.cdss.ca.gov/Accessibility">Accessibility</a> <a href="http://www.cdss.ca.gov/Contact-Us">Contact Us</a>
+    </stt-class>
+    <p>
+    </p><div class="ng-binding">
+        Transparency v 1.0.1
+    </div>
+    <div>
+        Copyright © 2013-2014 State of California
+    </div>
+    <p></p>
+</footer>
+
+<div id="background_decorative" class="ng-scope">&nbsp;</div>
+</div>
+
+</div>
+</div>
+
+
+
+
+
+
+</body></html>

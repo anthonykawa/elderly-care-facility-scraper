@@ -1,0 +1,11 @@
+*.csv
+*.pyc
+__pycache__/
+venv/
+.venv/
+.env
+
+# PyInstaller build artifacts
+build/
+dist/
+*.spec

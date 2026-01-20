@@ -1,0 +1,11 @@
+# Core scraping dependencies
+selenium>=4.16.0
+webdriver-manager>=4.0.1
+
+# For building executables
+pyinstaller>=6.3.0
+
+# Note: GUI version (scraper_gui.py) requires tkinter
+# - Windows/macOS: tkinter comes pre-installed with Python
+# - Linux: Install with 'sudo apt-get install python3-tk' (Ubuntu/Debian)
+#          or 'sudo yum install python3-tkinter' (RedHat/CentOS)

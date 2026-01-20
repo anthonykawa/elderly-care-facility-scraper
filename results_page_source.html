@@ -1,0 +1,681 @@
+<html class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths js no-flexbox flexbox-legacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths" lang="en"><head><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+    <!--
+        Customize the content security policy in the meta tag below as needed. Add 'unsafe-inline' to default-src to enable inline JavaScript.
+        For details, see http://go.microsoft.com/fwlink/?LinkID=617521
+    -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Security-Policy" content="default-src *  data: gap: https://localhost http://localhost:59224 https://maps.googleapis.com http://www.ccld.ca.gov http://*.google-analytics.com https://*.google-analytics.com https://sectest.dss.ca.gov https://secure.dss.ca.gov https://www.google.com https://ssl.gstatic.com 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://use.fontawesome.com; font-src 'self' 'unsafe-inline' https://use.fontawesome.com; media-src *">
+    <script>document.write('<base href="' + document.location + '" />');</script><base href="https://www.ccld.dss.ca.gov/carefacilitysearch/">
+    <!-- TODONote  fix base href for appropiate deployment-->
+    <!--<base href="/TransparencyApp/" />-->
+
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=2, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <title>Social Services - Community Care Facility search</title>
+
+    <meta charset="utf-8">
+
+    <meta name="Author" content="Department of Social Services, State of California">
+    <meta name="Description" content="Care facility search">
+    <meta name="Keywords" content="California, government, elder care, child care">
+
+
+
+    <!-- http://t.co/dKP3o1e -->
+    <meta name="HandheldFriendly" content="True"> <!-- for Blackberry, AvantGo -->
+    <meta name="MobileOptimized" content="320"> <!-- for Windows mobile -->
+    <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0">
+
+
+    <!-- For all browsers -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--
+    Step 3
+    Select a color scheme:
+
+    <link rel="stylesheet" href="/CountySite/css/colorscheme_oceanside.css">
+    <link rel="stylesheet" href="/CountySite/css/colorscheme_orangecounty.css">
+    <link rel="stylesheet" href="/CountySite/css/colorscheme_pasorobles.css">
+    <link rel="stylesheet" href="/CountySite/css/colorscheme_santabarbara.css">
+    <link rel="stylesheet" href="/CountySite/css/colorscheme_sierra.css">
+    -->
+    <!-- county --><!--link rel="stylesheet" href="css/colorscheme_pasorobles_mod2.css"-->
+    <!-- public -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">-->
+    <link rel="stylesheet" href="css/colorscheme_santabarbara.css">
+
+
+    <link rel="stylesheet" media="print" href="css/print.css">
+    <!-- For progressively larger displays -->
+    <link rel="stylesheet" media="only screen and (min-width: 480px)" href="css/480.css">
+    <link rel="stylesheet" media="only screen and (min-width: 600px)" href="css/600.css">
+    <link rel="stylesheet" media="only screen and (min-width: 768px)" href="css/768.css">
+    <!-- <link rel="stylesheet" media="only screen and (min-width: 992px)" href="/css/992.css"> -->
+    <link rel="stylesheet" media="only screen and (min-width: 1280px)" href="css/1280.css">
+    <!-- For Retina displays -->
+    <!-- <link rel="stylesheet" media="only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5)" href="/css/2x.css"> -->
+    <!-- selectivizr.com, emulates CSS3 pseudo-classes and attribute selectors in Internet Explorer 6-8 -->
+    <!--[if (lt IE 9) & (!IEMobile)]>
+    <script src="/javascript/libs/selectivizr-min.js"></script>
+    <![endif]-->
+    <!-- modernizr.com, feature detection -->
+    <script src="scripts/libs/modernizr-2.0.6.min.js"></script>
+
+    <!-- For iPad 3-->
+    <link rel="apple-touch-icon" sizes="144x144" href="images/template2013/apple-touch-icon-144x144.png">
+    <!-- For iPhone 4 -->
+    <link rel="apple-touch-icon" sizes="114x114" href="images/template2013/apple-touch-icon-114x114.png">
+    <!-- For iPad 1-->
+    <link rel="apple-touch-icon" sizes="72x72" href="images/template2013/apple-touch-icon-72x72.png">
+    <!-- For iPhone 3G, iPod Touch and Android -->
+    <link rel="apple-touch-icon" href="images/template2013/apple-touch-icon-57x57.png">
+    <!-- For Nokia -->
+    <link rel="shortcut icon" href="images/template2013/apple-touch-icon-57x57.png">
+    <!-- For everything else -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <!--Microsoft. Activate ClearType. Use highest compatibility mode, enable Chrome Frame -->
+    <!--[if IE]>
+    <meta http-equiv="cleartype" content="on">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <![endif]-->
+    <!--[if lt IE 9]>
+    <script src="/javascript/libs/respond.min.js"></script>
+    <![endif]-->
+    <!-- Styles.Render("~/Content/themes/base/css") -->
+
+
+    <link href="css/select.css" rel="stylesheet"><!-- angular select style sheet-->
+    <link href="css/select2.css" rel="stylesheet"><!-- angular select style sheet-->
+    <link href="css/selectize.default.css" rel="stylesheet"><!-- angular select style sheet-->
+    <link href="css/angular-tooltips.css" rel="stylesheet"><!-- angular select style sheet-->
+    <!--    <link href="css/themes/sunny/jquery-ui-1.10.4.custom.css" rel="stylesheet" />-->
+
+    <link href="css/ReactTablecss/bootstrap-glyphicons.css" rel="stylesheet">
+    <link href="css/ReactTablecss/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/ReactTablecss/bootstrap.css" rel="stylesheet">
+    <link href="css/ReactTablecss/bootstrapSwitch.css" rel="stylesheet">
+
+    <!--<link href="css/jquery.qtip.css" rel="stylesheet" />
+    <link href="css/jquery.sBubble-0.1.1.css" rel="stylesheet" />
+
+    <link href="css/ReactTablecss/footable.core.min.css" rel="stylesheet" />-->
+    <!--link href="/CountySite/Content/site.css" rel="stylesheet" /-->
+    <!--   <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.css">-->
+    <!--<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/select2/3.4.5/select2.css">-->
+    <!--<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.8.5/css/selectize.default.css">-->
+
+    <link rel="stylesheet" href="css/transparency.css">
+
+    <script type="text/javascript" src="scripts/angular.js"></script>
+    <script type="text/javascript" src="scripts/angular-ui-router.min.js"></script>
+    <script type="text/javascript" src="scripts/angular-sanitize.min.js"></script>
+    <script type="text/javascript" src="scripts/angular-animate.min.js"></script>
+    <script type="text/javascript" src="scripts/angular-tooltips.js"></script>
+    <script type="text/javascript" src="scripts/select.min.js"></script> <!-- angular select-->
+    <script type="text/javascript" src="scripts/platformOverrides.js"></script>
+    <script type="text/javascript" src="scripts/ui-bootstrap-tpls-0.10.js"></script>
+    <script type="text/javascript" src="scripts/xml2json.js"></script>
+    <script type="text/javascript" src="javascript/GALocalStorage.js"></script>
+
+    <!--<script type="text/javascript" src="scripts/js.1.10/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>-->
+    <script type="text/javascript" src="javascript/Config.js"></script>
+    <script type="text/javascript" src="javascript/scripts.js"></script>
+    <script type="text/javascript" src="javascript/tree.js"></script>
+    <script type="text/javascript" src="javascript/index.js"></script>
+    <script type="text/javascript" src="javascript/GALocalStorage.js"></script>
+    <script type="text/javascript" src="javascript/transparencyApp.js"></script>
+
+    <script type="text/javascript" src="javascript/Controller/facListController.js"></script>
+    <script type="text/javascript" src="javascript/Controller/footerController.js"></script>
+    <script type="text/javascript" src="javascript/Controller/searchController.js"></script>
+    <script type="text/javascript" src="javascript/Controller/groupController.js"></script>
+    <script type="text/javascript" src="javascript/Controller/glossaryController.js"></script>
+    <script type="text/javascript" src="javascript/Controller/phoneHeaderController.js"></script>
+    <script type="text/javascript" src="javascript/Controller/facDetailController.js"></script>
+    <script type="text/javascript" src="javascript/Controller/emailController.js"></script>
+    <script type="text/javascript" src="javascript/Controller/downloadController.js"></script>
+    <script type="text/javascript" src="javascript/Controller/faqController.js"></script>
+    <script type="text/javascript" src="javascript/Controller/announcementController.js"></script>
+
+
+    <script type="text/javascript" src="scripts/modernizr-2.5.3.js"></script>
+
+<style type="text/css" media="">#navigation.phone_show_nav {	height:240px;}</style></head>
+
+
+<body ng-app="transparencyApp" class="clearfix ng-scope">
+   
+
+
+
+    <!-- ui-view-anchor --><div ui-view="" autoscroll="false" class="" style=""><!-- ui-view-anchor --><div ui-view="header" autoscroll="false" class="ng-scope"><div ng-controller="phone_hdrController" class="ng-scope">
+    <header role="banner" class="phoneHeader">
+        <div id="skip_to_content"><a href="#main_content">Skip to Main Content</a></div>
+
+
+        <div class="phone_hdr" ng-click="menu_click()">
+            <div class="phone_hd_left">
+                <a class="p_h_button p_h_menu" id="ResponsiveMenu" ng-click="toggle = !toggle"><img src="images/template2013/clear.gif" alt="Menu"></a>
+            </div>
+            <div class="phone_hd_right">
+                <a class="p_h_button p_h_contact" href="/FacilityInquiry.html"><img src="images/template2013/clear.gif" alt="Contact Us"></a>
+                <a class="p_h_button p_h_search" id="ResponsiveSearch" ng-click="toggle_search()"><img src="images/template2013/clear.gif" alt="Search"></a>
+            </div>
+            <div class="logo_and_banner">
+                <div class="head_cagov_logo"><a target="_blank" href="http://www.ca.gov/"><img src="images/template2013/header-ca.gov.png" alt="CA.gov"></a></div>
+                <div class="head_organization_banner"><a target="_blank" href="http://www.cdss.ca.gov/"><img src="images/template2013/header_organization.png" alt="Organization Title"></a></div>
+            </div>
+        </div>
+
+
+        <!-- Using padding alternative to replace the DownloadData Menu option by Victor Wong 2/4/2015	-->
+        <nav id="navigation" ng-class="{phone_show_nav: toggle}">
+            <!-- ngIf: TransparencyMode == 'Public' --><div ng-if="TransparencyMode == 'Public'" class="ng-scope">
+                <ul id="nav_list">
+                    <li><a ui-sref="index" class="nav_level1_link" href="/"><span id="nav_home_container"></span><img src="images/template2013/clear.gif" alt="Home">&nbsp;</a></li>
+                    <li class="homeLink"><a ui-sref="index" class="nav_level1_link" href="/">Home</a></li>
+                    <li><a ui-sref="downloaddata" class="nav_level1_link" href="/DownloadData">Download Data</a></li>
+                    <li><a href="https://cdss.ca.gov/inforesources/community-care-licensing" target="_blank" class="nav_level1_link">State Offices</a></li>
+                    <li><a ui-sref="faqlist({id:'full'})" class="nav_level1_link" href="/FAQList/full">FAQ</a></li>
+                    <li><a ui-sref="glossary" class="nav_level1_link" href="/Glossary">Glossary</a></li>
+                </ul>
+            </div><!-- end ngIf: TransparencyMode == 'Public' -->
+            <!-- ngIf: TransparencyMode == 'County' -->
+        </nav>
+
+        <div id="img_ribbon"></div>
+    </header>
+    <div ng-class="spacerclass" class="menucollapsed"></div>
+</div></div>
+
+<!-- ui-view-anchor --><div ui-view="main" autoscroll="false" class="ng-scope"><!--link rel="stylesheet" href="css/bootstrap_sandstone.css"-->
+<div id="main_content" class="clearfix ng-scope" ng-controller="facListController as ctrl">
+
+
+    <div class="content_left_column clearfix">
+        <div class="add_maincontent_padding">
+            <!-- InstanceBeginEditable name="MainContent" -->
+            <div class="container_style_b" style="overflow:visible;">
+                <!-- search by licensee name vs by facility type -->
+                <h4 class="ng-binding">
+                    Results Page: 
+                    Assisted Living
+                    <!-- tooltips: --><tooltip tooltip-template-url="tooltips/results_general.html" tooltip-side="bottom" tooltip-size="medium" class="tooltips _bottom _steady _ready"><tip-cont><img tooltip-append-to-body="false" class="results ng-scope" src="images/q_mark-1.gif" alt="Question Mark"></tip-cont><tip class=""><tip-tip class="_medium"><span id="close-button" style="display: none;">×</span><strong class="ng-scope">Search may return multiple facilities of the same name. This may indicate that a facility has moved or has multiple locations.</strong></tip-tip><tip-arrow></tip-arrow></tip></tooltip>
+                    <br>
+                    <span style="font-weight:normal">
+                        Search values:
+                        <!-- ngIf: ctrl.isLicenseeSearch() -->
+                        <!-- ngIf: !ctrl.isLicenseeSearch() --><span ng-if="!ctrl.isLicenseeSearch()" class="ng-binding ng-scope">
+                              Roseville  
+                        </span><!-- end ngIf: !ctrl.isLicenseeSearch() -->
+                    </span>
+                </h4>
+                <span ng-show="!ctrl.isLoaded" class="ng-hide" style=""><img class="spinnerimg" src="images/spinner.gif" alt="Loading, please wait">Please wait, loading data</span>                <div class="" ng-show="ctrl.isLoaded" style="">
+                    <!-- ngIf: ctrl.FACILITYARRAY.length == 0 -->
+
+                    <!-- ngIf: ctrl.FACILITYARRAY.length >= 250 -->
+
+                    <div style="padding-left:20px; float:left;"> <strong>Filter: <!-- tooltips: --><tooltip tooltip-template-url="tooltips/results_filter.html" tooltip-side="bottom" tooltip-size="medium" class="tooltips _bottom _steady _ready"><tip-cont><img src="images/q_mark-1.gif" alt="Question Mark" tooltip-append-to-body="false" class="ng-scope"></tip-cont><tip class=""><tip-tip class="_medium"><span id="close-button" style="display: none;">×</span><strong class="ng-scope">Enter full or parial names to filter results. Filters by any column.</strong></tip-tip><tip-arrow></tip-arrow></tip></tooltip> </strong><input type="text" id="filter" value="" ng-model="ctrl.facilityFilter" ng-change="ctrl.facilitySearchFilter()" class="ng-pristine ng-untouched ng-valid ng-empty">  </div>
+                    <div style="padding-left:20px; float:left;">
+                        <strong> Status: </strong> &nbsp;&nbsp;
+                        <select id="status-select" style="width: 100px" class="filter-status ng-pristine ng-untouched ng-valid ng-not-empty" ng-model="ctrl.facilityStatusFilter" ng-change="ctrl.facilitySearchFilter()">
+                            <option value="All" selected="">All</option>
+                            <option value="Licensed">Licensed</option>
+                            <option value="Pending">Pending</option>
+                            <option value="On Probation">On Probation</option>
+                        </select>
+                    </div>
+                    <table class="footable table toggle-square">
+                        <thead>
+                            <tr>
+                                <th>
+                                    <!-- tooltips: --><tooltip tooltip-template-url="tooltips/results_sort.html" tooltip-side="right" tooltip-size="medium" class="tooltips _right _steady _ready"><tip-cont><img class="instr2 ng-scope" src="images/q_mark-1.gif" alt="Question Mark" tooltip-append-to-body="false"></tip-cont><tip class=""><tip-tip class="_medium"><span id="close-button" style="display: none;">×</span><strong class="ng-scope">All columns are sortable by clicking on them.</strong></tip-tip><tip-arrow></tip-arrow></tip></tooltip>
+                                    <div ng-model="ctrl.sortReverse" ng-click="ctrl.sortSearchBy('FACILITYNAME')" class="anchorlike ng-pristine ng-untouched ng-valid ng-not-empty">
+                                        Facility Name
+                                        <span ng-show="ctrl.sortType == 'FACILITYNAME'" class="fa fa-caret-down" ng-class="{'fa-caret-down': ctrl.sortReverse == false,'fa-caret-up': ctrl.sortReverse == true}"></span>
+                                        <span ng-show="ctrl.sortType != 'FACILITYNAME'" class="sortablecolumn ng-hide">
+                                            <span class="fa unselected-sort-caret-up fa-caret-up" ng-class="{'fa-caret-up': true}"></span>
+                                            <span class="fa unselected-sort-caret-down fa-caret-down" ng-class="{'fa-caret-down': true}"></span>
+                                        </span>
+                                    </div>
+                                </th>
+                                <!-- ngIf: ctrl.isLicenseeSearch() -->
+                                <th data-hide="phone,tablet" class="hidden-tablet hidden-phone">
+                                    <div ng-click="ctrl.sortSearchBy('STREETADDRESS')" class="anchorlike">
+                                        Address
+                                        <span ng-show="ctrl.sortType == 'STREETADDRESS'" class="fa fa-caret-down ng-hide" ng-class="{'fa-caret-down': ctrl.sortReverse == false,'fa-caret-up': ctrl.sortReverse == true}"></span>
+                                        <span ng-show="ctrl.sortType != 'STREETADDRESS'" class="sortablecolumn">
+                                            <span class="fa unselected-sort-caret-up fa-caret-up" ng-class="{'fa-caret-up': true}"></span>
+                                            <span class="fa unselected-sort-caret-down fa-caret-down" ng-class="{'fa-caret-down': true}"></span>
+                                        </span>
+                                    </div>
+                                </th>
+                                <th data-hide="phone" class="hidden-phone">
+                                    <div ng-click="ctrl.sortSearchBy('ZIPCODE')" class="anchorlike">
+                                        Zip
+                                        <span ng-show="ctrl.sortType == 'ZIPCODE'" class="fa fa-caret-down ng-hide" ng-class="{'fa-caret-down': ctrl.sortReverse == false,'fa-caret-up': ctrl.sortReverse == true}"></span>
+                                        <span ng-show="ctrl.sortType != 'ZIPCODE'" class="sortablecolumn">
+                                            <span class="fa unselected-sort-caret-up fa-caret-up" ng-class="{'fa-caret-up': true}"></span>
+                                            <span class="fa unselected-sort-caret-down fa-caret-down" ng-class="{'fa-caret-down': true}"></span>
+                                        </span>
+                                    </div>
+                                </th>
+                                <th data-hide="phone" class="hidden-phone">
+                                    <div ng-click="ctrl.sortSearchBy('STATUS')" class="anchorlike">
+                                        Status
+                                        <span ng-show="ctrl.sortType == 'STATUS'" class="fa fa-caret-down ng-hide" ng-class="{'fa-caret-down': ctrl.sortReverse == false,'fa-caret-up': ctrl.sortReverse == true}"></span>
+                                        <span ng-show="ctrl.sortType != 'STATUS'" class="sortablecolumn">
+                                            <span class="fa unselected-sort-caret-up fa-caret-up" ng-class="{'fa-caret-up': true}"></span>
+                                            <span class="fa unselected-sort-caret-down fa-caret-down" ng-class="{'fa-caret-down': true}"></span>
+                                        </span>
+                                    </div>
+                                </th>
+                                <th data-sort-ignore="true"> </th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <!-- ngRepeat: facility in ctrl.pagedItems[ctrl.currentPage] --><tr ng-init="facility.searchData=ctrl.buildSearchData(facility)" ng-repeat="facility in ctrl.pagedItems[ctrl.currentPage]" class="ng-scope" style="">
+                                <td class="ng-binding">7184LUDLOW HOME CARE</td>
+                                <!-- ngIf: ctrl.isLicenseeSearch() -->
+                                <td class="hidden-tablet hidden-phone ng-binding">7184 LUDLOW DR</td>
+                                <td class="hidden-phone ng-binding">95747</td>
+                                <td class="hidden-phone ng-binding">Pending</td>
+                                <td><a ui-sref="facdetail({facNumber: facility.FACILITYNUMBER})" href="/FacDetail/315920367">view</a></td>
+                            </tr><!-- end ngRepeat: facility in ctrl.pagedItems[ctrl.currentPage] --><tr ng-init="facility.searchData=ctrl.buildSearchData(facility)" ng-repeat="facility in ctrl.pagedItems[ctrl.currentPage]" class="ng-scope">
+                                <td class="ng-binding">A LOVING AND JOYFUL HOME RCFE</td>
+                                <!-- ngIf: ctrl.isLicenseeSearch() -->
+                                <td class="hidden-tablet hidden-phone ng-binding">609 HERNANDEZ LANE</td>
+                                <td class="hidden-phone ng-binding">95678</td>
+                                <td class="hidden-phone ng-binding">Licensed</td>
+                                <td><a ui-sref="facdetail({facNumber: facility.FACILITYNUMBER})" href="/FacDetail/312700901">view</a></td>
+                            </tr><!-- end ngRepeat: facility in ctrl.pagedItems[ctrl.currentPage] --><tr ng-init="facility.searchData=ctrl.buildSearchData(facility)" ng-repeat="facility in ctrl.pagedItems[ctrl.currentPage]" class="ng-scope">
+                                <td class="ng-binding">A LOVING ARM HOME LLC</td>
+                                <!-- ngIf: ctrl.isLicenseeSearch() -->
+                                <td class="hidden-tablet hidden-phone ng-binding">409 GLIMMER PLACE</td>
+                                <td class="hidden-phone ng-binding">95747</td>
+                                <td class="hidden-phone ng-binding">Licensed</td>
+                                <td><a ui-sref="facdetail({facNumber: facility.FACILITYNUMBER})" href="/FacDetail/315002913">view</a></td>
+                            </tr><!-- end ngRepeat: facility in ctrl.pagedItems[ctrl.currentPage] --><tr ng-init="facility.searchData=ctrl.buildSearchData(facility)" ng-repeat="facility in ctrl.pagedItems[ctrl.currentPage]" class="ng-scope">
+                                <td class="ng-binding">A&amp;C HARMONY CARE HOME</td>
+                                <!-- ngIf: ctrl.isLicenseeSearch() -->
+                                <td class="hidden-tablet hidden-phone ng-binding">6040 BIG BEND DRIVE</td>
+                                <td class="hidden-phone ng-binding">95678</td>
+                                <td class="hidden-phone ng-binding">Licensed</td>
+                                <td><a ui-sref="facdetail({facNumber: facility.FACILITYNUMBER})" href="/FacDetail/315920236">view</a></td>
+                            </tr><!-- end ngRepeat: facility in ctrl.pagedItems[ctrl.currentPage] --><tr ng-init="facility.searchData=ctrl.buildSearchData(facility)" ng-repeat="facility in ctrl.pagedItems[ctrl.currentPage]" class="ng-scope">
+                                <td class="ng-binding">A-1 ELDERLY CARE</td>
+                                <!-- ngIf: ctrl.isLicenseeSearch() -->
+                                <td class="hidden-tablet hidden-phone ng-binding">103 MCLAREN COURT</td>
+                                <td class="hidden-phone ng-binding">95661</td>
+                                <td class="hidden-phone ng-binding">Licensed</td>
+                                <td><a ui-sref="facdetail({facNumber: facility.FACILITYNUMBER})" href="/FacDetail/317005454">view</a></td>
+                            </tr><!-- end ngRepeat: facility in ctrl.pagedItems[ctrl.currentPage] --><tr ng-init="facility.searchData=ctrl.buildSearchData(facility)" ng-repeat="facility in ctrl.pagedItems[ctrl.currentPage]" class="ng-scope">
+                                <td class="ng-binding">A-PLUS SENIOR CARE</td>
+                                <!-- ngIf: ctrl.isLicenseeSearch() -->
+                                <td class="hidden-tablet hidden-phone ng-binding">6540 ROSE BRIDGE DRIVE</td>
+                                <td class="hidden-phone ng-binding">95678</td>
+                                <td class="hidden-phone ng-binding">Licensed</td>
+                                <td><a ui-sref="facdetail({facNumber: facility.FACILITYNUMBER})" href="/FacDetail/315002957">view</a></td>
+                            </tr><!-- end ngRepeat: facility in ctrl.pagedItems[ctrl.currentPage] --><tr ng-init="facility.searchData=ctrl.buildSearchData(facility)" ng-repeat="facility in ctrl.pagedItems[ctrl.currentPage]" class="ng-scope">
+                                <td class="ng-binding">A1 SENIOR CARE 2</td>
+                                <!-- ngIf: ctrl.isLicenseeSearch() -->
+                                <td class="hidden-tablet hidden-phone ng-binding">2040 SYMPHONY AVE</td>
+                                <td class="hidden-phone ng-binding">95747</td>
+                                <td class="hidden-phone ng-binding">Licensed</td>
+                                <td><a ui-sref="facdetail({facNumber: facility.FACILITYNUMBER})" href="/FacDetail/312701001">view</a></td>
+                            </tr><!-- end ngRepeat: facility in ctrl.pagedItems[ctrl.currentPage] --><tr ng-init="facility.searchData=ctrl.buildSearchData(facility)" ng-repeat="facility in ctrl.pagedItems[ctrl.currentPage]" class="ng-scope">
+                                <td class="ng-binding">A1 SENIOR CARE 4</td>
+                                <!-- ngIf: ctrl.isLicenseeSearch() -->
+                                <td class="hidden-tablet hidden-phone ng-binding">201 STAR DREAM COURT</td>
+                                <td class="hidden-phone ng-binding">95747</td>
+                                <td class="hidden-phone ng-binding">Licensed</td>
+                                <td><a ui-sref="facdetail({facNumber: facility.FACILITYNUMBER})" href="/FacDetail/315920286">view</a></td>
+                            </tr><!-- end ngRepeat: facility in ctrl.pagedItems[ctrl.currentPage] --><tr ng-init="facility.searchData=ctrl.buildSearchData(facility)" ng-repeat="facility in ctrl.pagedItems[ctrl.currentPage]" class="ng-scope">
+                                <td class="ng-binding">A1SENIOR CARE</td>
+                                <!-- ngIf: ctrl.isLicenseeSearch() -->
+                                <td class="hidden-tablet hidden-phone ng-binding">217 HINGHAM CT</td>
+                                <td class="hidden-phone ng-binding">95747</td>
+                                <td class="hidden-phone ng-binding">Licensed</td>
+                                <td><a ui-sref="facdetail({facNumber: facility.FACILITYNUMBER})" href="/FacDetail/312700395">view</a></td>
+                            </tr><!-- end ngRepeat: facility in ctrl.pagedItems[ctrl.currentPage] --><tr ng-init="facility.searchData=ctrl.buildSearchData(facility)" ng-repeat="facility in ctrl.pagedItems[ctrl.currentPage]" class="ng-scope">
+                                <td class="ng-binding">AAA HOME CARE</td>
+                                <!-- ngIf: ctrl.isLicenseeSearch() -->
+                                <td class="hidden-tablet hidden-phone ng-binding">6268 GRAND CANYON DR.</td>
+                                <td class="hidden-phone ng-binding">95678</td>
+                                <td class="hidden-phone ng-binding">Licensed</td>
+                                <td><a ui-sref="facdetail({facNumber: facility.FACILITYNUMBER})" href="/FacDetail/317004845">view</a></td>
+                            </tr><!-- end ngRepeat: facility in ctrl.pagedItems[ctrl.currentPage] -->
+                        </tbody>
+
+                        <tfoot>
+                            <tr>
+                                <td colspan="5">
+                                    <!--http://jsfiddle.net/SAWsA/11/ pagination-->
+                                    <div class="pagination pull-right">
+                                        <ul>
+                                            <li ng-class="{disabled: ctrl.currentPage == 0}" class="disabled">
+                                                <span class="anchorlike" ng-click="ctrl.prevPage()">« Prev</span>
+                                            </li>
+                                            <!-- ngRepeat: n in ctrl.range(ctrl.pagedItems.length) --><li ng-repeat="n in ctrl.range(ctrl.pagedItems.length)" ng-class="{active: n == ctrl.currentPage}" ng-click="ctrl.setPage(n)" class="ng-scope active" style="">
+                                                <span class="anchorlike ng-binding" ng-bind="n + 1">1</span>
+                                            </li><!-- end ngRepeat: n in ctrl.range(ctrl.pagedItems.length) --><li ng-repeat="n in ctrl.range(ctrl.pagedItems.length)" ng-class="{active: n == ctrl.currentPage}" ng-click="ctrl.setPage(n)" class="ng-scope" style="">
+                                                <span class="anchorlike ng-binding" ng-bind="n + 1">2</span>
+                                            </li><!-- end ngRepeat: n in ctrl.range(ctrl.pagedItems.length) --><li ng-repeat="n in ctrl.range(ctrl.pagedItems.length)" ng-class="{active: n == ctrl.currentPage}" ng-click="ctrl.setPage(n)" class="ng-scope">
+                                                <span class="anchorlike ng-binding" ng-bind="n + 1">3</span>
+                                            </li><!-- end ngRepeat: n in ctrl.range(ctrl.pagedItems.length) --><li ng-repeat="n in ctrl.range(ctrl.pagedItems.length)" ng-class="{active: n == ctrl.currentPage}" ng-click="ctrl.setPage(n)" class="ng-scope">
+                                                <span class="anchorlike ng-binding" ng-bind="n + 1">4</span>
+                                            </li><!-- end ngRepeat: n in ctrl.range(ctrl.pagedItems.length) --><li ng-repeat="n in ctrl.range(ctrl.pagedItems.length)" ng-class="{active: n == ctrl.currentPage}" ng-click="ctrl.setPage(n)" class="ng-scope">
+                                                <span class="anchorlike ng-binding" ng-bind="n + 1">5</span>
+                                            </li><!-- end ngRepeat: n in ctrl.range(ctrl.pagedItems.length) --><li ng-repeat="n in ctrl.range(ctrl.pagedItems.length)" ng-class="{active: n == ctrl.currentPage}" ng-click="ctrl.setPage(n)" class="ng-scope">
+                                                <span class="anchorlike ng-binding" ng-bind="n + 1">6</span>
+                                            </li><!-- end ngRepeat: n in ctrl.range(ctrl.pagedItems.length) --><li ng-repeat="n in ctrl.range(ctrl.pagedItems.length)" ng-class="{active: n == ctrl.currentPage}" ng-click="ctrl.setPage(n)" class="ng-scope">
+                                                <span class="anchorlike ng-binding" ng-bind="n + 1">7</span>
+                                            </li><!-- end ngRepeat: n in ctrl.range(ctrl.pagedItems.length) --><li ng-repeat="n in ctrl.range(ctrl.pagedItems.length)" ng-class="{active: n == ctrl.currentPage}" ng-click="ctrl.setPage(n)" class="ng-scope">
+                                                <span class="anchorlike ng-binding" ng-bind="n + 1">8</span>
+                                            </li><!-- end ngRepeat: n in ctrl.range(ctrl.pagedItems.length) --><li ng-repeat="n in ctrl.range(ctrl.pagedItems.length)" ng-class="{active: n == ctrl.currentPage}" ng-click="ctrl.setPage(n)" class="ng-scope">
+                                                <span class="anchorlike ng-binding" ng-bind="n + 1">9</span>
+                                            </li><!-- end ngRepeat: n in ctrl.range(ctrl.pagedItems.length) --><li ng-repeat="n in ctrl.range(ctrl.pagedItems.length)" ng-class="{active: n == ctrl.currentPage}" ng-click="ctrl.setPage(n)" class="ng-scope">
+                                                <span class="anchorlike ng-binding" ng-bind="n + 1">10</span>
+                                            </li><!-- end ngRepeat: n in ctrl.range(ctrl.pagedItems.length) --><li ng-repeat="n in ctrl.range(ctrl.pagedItems.length)" ng-class="{active: n == ctrl.currentPage}" ng-click="ctrl.setPage(n)" class="ng-scope">
+                                                <span class="anchorlike ng-binding" ng-bind="n + 1">11</span>
+                                            </li><!-- end ngRepeat: n in ctrl.range(ctrl.pagedItems.length) --><li ng-repeat="n in ctrl.range(ctrl.pagedItems.length)" ng-class="{active: n == ctrl.currentPage}" ng-click="ctrl.setPage(n)" class="ng-scope">
+                                                <span class="anchorlike ng-binding" ng-bind="n + 1">12</span>
+                                            </li><!-- end ngRepeat: n in ctrl.range(ctrl.pagedItems.length) --><li ng-repeat="n in ctrl.range(ctrl.pagedItems.length)" ng-class="{active: n == ctrl.currentPage}" ng-click="ctrl.setPage(n)" class="ng-scope">
+                                                <span class="anchorlike ng-binding" ng-bind="n + 1">13</span>
+                                            </li><!-- end ngRepeat: n in ctrl.range(ctrl.pagedItems.length) --><li ng-repeat="n in ctrl.range(ctrl.pagedItems.length)" ng-class="{active: n == ctrl.currentPage}" ng-click="ctrl.setPage(n)" class="ng-scope">
+                                                <span class="anchorlike ng-binding" ng-bind="n + 1">14</span>
+                                            </li><!-- end ngRepeat: n in ctrl.range(ctrl.pagedItems.length) --><li ng-repeat="n in ctrl.range(ctrl.pagedItems.length)" ng-class="{active: n == ctrl.currentPage}" ng-click="ctrl.setPage(n)" class="ng-scope">
+                                                <span class="anchorlike ng-binding" ng-bind="n + 1">15</span>
+                                            </li><!-- end ngRepeat: n in ctrl.range(ctrl.pagedItems.length) -->
+                                            <li ng-class="{disabled: ctrl.currentPage == ctrl.pagedItems.length - 1}">
+                                                <span class="anchorlike" ng-click="ctrl.nextPage()">Next »</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+            <a><site-header back="Back" class="ng-isolate-scope"><a class="ng-binding">Back</a></site-header></a>&nbsp;[<a ng-click="SearchNew()" ui-sref="search({groupId: 'ElderlyAssistedLiving'})" href="/Search/ElderlyAssistedLiving">New Search</a>]<!-- [<a href="/CareFacilitySearch/home/SelectType">Change Facility Type</a>] -->		<!-- InstanceEndEditable -->
+        </div>
+    </div>
+    <!-- ui-view-anchor --><div ui-view="right" autoscroll="false"><div class="content_right_column clearfix ng-scope">
+    <!-- InstanceBeginEditable name="ContentRightColumn" -->
+
+
+
+
+
+    <style>
+        #accordion {
+            list-style: none;
+            padding: 0 0 0 0;
+            width: 95%;
+        }
+
+            #accordion div {
+                display: block;
+                font-weight: bold;
+                margin: 5px 5px;
+                cursor: pointer;
+                padding: 2px 2px 2px 2px;
+                list-style: circle;
+            }
+
+            #accordion ul {
+                list-style: none;
+                padding: 0 0 0 0;
+            }
+
+            #accordion ul {
+                /*display: none;*/
+            }
+
+                #accordion ul li {
+                    font-weight: normal;
+                    cursor: auto;
+                    background-color: #fff;
+                    padding: 0 0 0 2px;
+                }
+
+            #accordion a {
+                text-decoration: none;
+            }
+
+        /* #accordion a:hover {    text-decoration: underline;} */
+
+        /* Resource Corner Links */
+
+        .transparency-accordion {
+            list-style: none;
+            padding: 0 0 0 0;
+            width: 95%;
+        }
+
+            .transparency-accordion div {
+                display: block;
+                font-weight: bold;
+                margin: 5px 5px;
+                cursor: pointer;
+                padding: 2px 2px 2px 2px;
+                list-style: circle;
+            }
+
+            .transparency-accordion ul {
+/*                list-style: none;
+*/                padding: 0 0 0 0;
+            }
+
+            .transparency-accordion ul {
+                /*display: none;*/
+            }
+
+                .transparency-accordion ul li {
+                    font-weight: normal;
+                    cursor: auto;
+                    background-color: #fff;
+                    padding: 0 0 0 2px;
+                }
+
+            .transparency-accordion a {
+                text-decoration: none;
+            }
+
+            .transparency-accordion b {
+                margin-top: 1em;
+            }
+
+            .transparency-accordion p {
+                margin-top: 1em;
+                font-weight: normal;
+            }
+
+    </style>
+
+
+    <!-- ngIf: showBanner -->
+
+    <!-- code sections below are a central instructon file rendered from the page title -->
+    <div ng-show="showFAQ" class="container_style_d">
+        <h5 style="color:White" class="ng-binding">Results FAQ</h5>
+        <div class="add_side_padding">
+
+            <!-- ui-view-anchor --><div ui-view="MyAccordianView" autoscroll="false"><!--http://jsfiddle.net/3sVz8/19/-->
+<div ng-controller="faqController as faqCtrl" class="ng-scope">
+    <ul id="accordion">
+        <!-- ngRepeat: item in faqCtrl.json track by $index --><!-- ngIf: faqCtrl.json.length !== undefined --><li ng-if="faqCtrl.json.length !== undefined" ng-repeat="item in faqCtrl.json track by $index" class="ng-scope">
+            <div slide-toggle="#derp0" class="ng-binding"><img src="images/template2013/bullet_blue_disc.png" alt="Blue Disk"> How do I see more detail about a facility?</div>
+            <div id="derp0" class="slideable" style="overflow: hidden; height: 0px; transition-property: height; transition-duration: 250ms; transition-timing-function: ease-in-out;"><div class="slideable_content" style="margin:0 !important; padding:0 !important"><ul><li ng-bind-html="item.answer" class="ng-binding">Select "view" to see additional information about the facility.</li></ul></div></div>
+        </li><!-- end ngIf: faqCtrl.json.length !== undefined --><!-- end ngRepeat: item in faqCtrl.json track by $index --><!-- ngIf: faqCtrl.json.length !== undefined --><li ng-if="faqCtrl.json.length !== undefined" ng-repeat="item in faqCtrl.json track by $index" class="ng-scope">
+            <div slide-toggle="#derp1" class="ng-binding"><img src="images/template2013/bullet_blue_disc.png" alt="Blue Disk"> Why do I keep getting no results?</div>
+            <div id="derp1" class="slideable" style="overflow: hidden; height: 0px; transition-property: height; transition-duration: 250ms; transition-timing-function: ease-in-out;"><div class="slideable_content" style="margin:0 !important; padding:0 !important"><ul><li ng-bind-html="item.answer" class="ng-binding">We may have no facilities in the search criteria you selected. We recommend you add fewer search variables or even select just the facility type and then filter your search on this page using the filter function on top.</li></ul></div></div>
+        </li><!-- end ngIf: faqCtrl.json.length !== undefined --><!-- end ngRepeat: item in faqCtrl.json track by $index --><!-- ngIf: faqCtrl.json.length !== undefined --><li ng-if="faqCtrl.json.length !== undefined" ng-repeat="item in faqCtrl.json track by $index" class="ng-scope">
+            <div slide-toggle="#derp2" class="ng-binding"><img src="images/template2013/bullet_blue_disc.png" alt="Blue Disk"> I keep entering the name of a facility and the county that it is in, but I still get zero results. Why?</div>
+            <div id="derp2" class="slideable" style="overflow: hidden; height: 0px; transition-property: height; transition-duration: 250ms; transition-timing-function: ease-in-out;"><div class="slideable_content" style="margin:0 !important; padding:0 !important"><ul><li ng-bind-html="item.answer" class="ng-binding">First, make sure the name of the facility is correct and then try searching on a term other than county.  A small subset of facilities may be listed in our system under a different county, so try searching on the city or street instead.</li></ul></div></div>
+        </li><!-- end ngIf: faqCtrl.json.length !== undefined --><!-- end ngRepeat: item in faqCtrl.json track by $index --><!-- ngIf: faqCtrl.json.length !== undefined --><li ng-if="faqCtrl.json.length !== undefined" ng-repeat="item in faqCtrl.json track by $index" class="ng-scope">
+            <div slide-toggle="#derp3" class="ng-binding"><img src="images/template2013/bullet_blue_disc.png" alt="Blue Disk"> I keep entering the name of a Small Family Child Care home, but I still get zero results. Why?</div>
+            <div id="derp3" class="slideable" style="overflow: hidden; height: 0px; transition-property: height; transition-duration: 250ms; transition-timing-function: ease-in-out;"><div class="slideable_content" style="margin:0 !important; padding:0 !important"><ul><li ng-bind-html="item.answer" class="ng-binding">For Small Family Child Care Homes, the search requires an exact name match. The format for this search is last name, first name and may (or may not) include the term: Family Child Care Home.  If you are not sure of the exact name, you can contact the facility directly, the <a href="http://www.rrnetwork.org/find_child_care" target="_blank"> Resource and Referral Network</a>, or by phone: 1-800-KIDS-793, or you may call a State Licensing Office listed in the menu bar at the top of the screen. </li></ul></div></div>
+        </li><!-- end ngIf: faqCtrl.json.length !== undefined --><!-- end ngRepeat: item in faqCtrl.json track by $index --><!-- ngIf: faqCtrl.json.length !== undefined --><li ng-if="faqCtrl.json.length !== undefined" ng-repeat="item in faqCtrl.json track by $index" class="ng-scope">
+            <div slide-toggle="#derp4" class="ng-binding"><img src="images/template2013/bullet_blue_disc.png" alt="Blue Disk"> Why can't I see or search on street addresses for Large Family Child Care Homes?</div>
+            <div id="derp4" class="slideable" style="overflow: hidden; height: 0px; transition-property: height; transition-duration: 250ms; transition-timing-function: ease-in-out;"><div class="slideable_content" style="margin:0 !important; padding:0 !important"><ul><li ng-bind-html="item.answer" class="ng-binding"> For Large Family Child Care Homes, you can still search using the City, Zip and County options. To obtain the address of a Large Family Child Care Home, please contact either the State Licensing Office, the <a href="http://www.rrnetwork.org/find_child_care" target="_blank"> Resource and Referral Network</a> or call 1-800-KIDS-793.</li></ul></div></div>
+        </li><!-- end ngIf: faqCtrl.json.length !== undefined --><!-- end ngRepeat: item in faqCtrl.json track by $index --><!-- ngIf: faqCtrl.json.length !== undefined --><li ng-if="faqCtrl.json.length !== undefined" ng-repeat="item in faqCtrl.json track by $index" class="ng-scope">
+            <div slide-toggle="#derp5" class="ng-binding"><img src="images/template2013/bullet_blue_disc.png" alt="Blue Disk"> Why can't I find the addresses for the following 24 Hour Residential Care Facilities for Children such as Group Homes, Out-of-State Group Homes and Community Treatment Facilities?</div>
+            <div id="derp5" class="slideable" style="overflow: hidden; height: 0px; transition-property: height; transition-duration: 250ms; transition-timing-function: ease-in-out;"><div class="slideable_content" style="margin:0 !important; padding:0 !important"><ul><li ng-bind-html="item.answer" class="ng-binding">The addresses were removed from this website in an effort to protect the safety and wellbeing of clients served by these facilities.  Information regarding facilities posted on the website can be obtained by contacting the local State Licensing Office.  To view a list of licensing offices by clicking on the following link:</li></ul></div></div>
+        </li><!-- end ngIf: faqCtrl.json.length !== undefined --><!-- end ngRepeat: item in faqCtrl.json track by $index --><!-- ngIf: faqCtrl.json.length !== undefined --><li ng-if="faqCtrl.json.length !== undefined" ng-repeat="item in faqCtrl.json track by $index" class="ng-scope">
+            <div slide-toggle="#derp6" class="ng-binding"><img src="images/template2013/bullet_blue_disc.png" alt="Blue Disk"> Why is there very little or no information on some facilities in Sacramento County?</div>
+            <div id="derp6" class="slideable" style="overflow: hidden; height: 0px; transition-property: height; transition-duration: 250ms; transition-timing-function: ease-in-out;"><div class="slideable_content" style="margin:0 !important; padding:0 !important"><ul><li ng-bind-html="item.answer" class="ng-binding">The County licensed all Family Child Care Homes until October 2013, when licensing was transferred to the State. If you would like information for a licensed facility prior to October 2013, please call the State Licensing Office and they can provide earlier information.</li></ul></div></div>
+        </li><!-- end ngIf: faqCtrl.json.length !== undefined --><!-- end ngRepeat: item in faqCtrl.json track by $index --><!-- ngIf: faqCtrl.json.length !== undefined --><li ng-if="faqCtrl.json.length !== undefined" ng-repeat="item in faqCtrl.json track by $index" class="ng-scope">
+            <div slide-toggle="#derp7" class="ng-binding"><img src="images/template2013/bullet_blue_disc.png" alt="Blue Disk"> Why do I get the same facilities for different search types?</div>
+            <div id="derp7" class="slideable" style="overflow: hidden; height: 0px; transition-property: height; transition-duration: 250ms; transition-timing-function: ease-in-out;"><div class="slideable_content" style="margin:0 !important; padding:0 !important"><ul><li ng-bind-html="item.answer" class="ng-binding">Some facilities may care for different types of people, or have more than one license. If you have additional questions regarding the people served and the services provided, contact the facility directly or call the State Licensing Office listed under the facility.</li></ul></div></div>
+        </li><!-- end ngIf: faqCtrl.json.length !== undefined --><!-- end ngRepeat: item in faqCtrl.json track by $index --><!-- ngIf: faqCtrl.json.length !== undefined --><li ng-if="faqCtrl.json.length !== undefined" ng-repeat="item in faqCtrl.json track by $index" class="ng-scope">
+            <div slide-toggle="#derp8" class="ng-binding"><img src="images/template2013/bullet_blue_disc.png" alt="Blue Disk"> Where can I find out more about how facilities are regulated in California?</div>
+            <div id="derp8" class="slideable" style="overflow: hidden; height: 0px; transition-property: height; transition-duration: 250ms; transition-timing-function: ease-in-out;"><div class="slideable_content" style="margin:0 !important; padding:0 !important"><ul><li ng-bind-html="item.answer" class="ng-binding"> Please visit the <a href="https://cdss.ca.gov/inforesources/community-care-licensing/" target="_blank"> Community Care Licensing</a> website. </li></ul></div></div>
+        </li><!-- end ngIf: faqCtrl.json.length !== undefined --><!-- end ngRepeat: item in faqCtrl.json track by $index --><!-- ngIf: faqCtrl.json.length !== undefined --><li ng-if="faqCtrl.json.length !== undefined" ng-repeat="item in faqCtrl.json track by $index" class="ng-scope">
+            <div slide-toggle="#derp9" class="ng-binding"><img src="images/template2013/bullet_blue_disc.png" alt="Blue Disk"> Why do some facility names look strange or cut off?</div>
+            <div id="derp9" class="slideable" style="overflow: hidden; height: 0px; transition-property: height; transition-duration: 250ms; transition-timing-function: ease-in-out;"><div class="slideable_content" style="margin:0 !important; padding:0 !important"><ul><li ng-bind-html="item.answer" class="ng-binding">Facility names may appear as abbreviated due to the limited number of characters allowed in the system for this information.</li></ul></div></div>
+        </li><!-- end ngIf: faqCtrl.json.length !== undefined --><!-- end ngRepeat: item in faqCtrl.json track by $index --><!-- ngIf: faqCtrl.json.length !== undefined --><li ng-if="faqCtrl.json.length !== undefined" ng-repeat="item in faqCtrl.json track by $index" class="ng-scope">
+            <div slide-toggle="#derp10" class="ng-binding"><img src="images/template2013/bullet_blue_disc.png" alt="Blue Disk"> How often is the data updated?</div>
+            <div id="derp10" class="slideable" style="overflow: hidden; height: 0px; transition-property: height; transition-duration: 250ms; transition-timing-function: ease-in-out;"><div class="slideable_content" style="margin:0 !important; padding:0 !important"><ul><li ng-bind-html="item.answer" class="ng-binding">The data is updated weekly.</li></ul></div></div>
+        </li><!-- end ngIf: faqCtrl.json.length !== undefined --><!-- end ngRepeat: item in faqCtrl.json track by $index -->
+        <!-- ngIf: faqCtrl.json.length === undefined -->
+     </ul>
+</div></div>
+
+        </div>
+    </div>
+
+    <!-- Resource Corner Links -->
+
+    <div class="container_style_d">
+        <h5 style="color:White">Consumer and Family Resources</h5>
+        <ul class="transparency-accordion">
+            <li>
+                <div slide-toggle="#contentResCorner"><img src="images/template2013/bullet_blue_disc.png" alt="Blue Disk"> Click to show/hide</div>
+                <div id="contentResCorner" class="slideable" style="margin-left: 1em; overflow: hidden; height: 0px; transition-property: height; transition-duration: 250ms; transition-timing-function: ease-in-out;"><div class="slideable_content" style="margin:0 !important; padding:0 !important">
+                    <p><b>Child Care Program</b></p>
+                    <p>Home Pages</p>
+                    <ul>
+                        <li><a href="https://www.cdss.ca.gov/inforesources/community-care-licensing" target="_blank">Community Care Licensing Division(CCLD) page</a></li>
+                        <li><a href="https://www.cdss.ca.gov/inforesources/child-care-licensing" target="_blank">Child Care Licensing Page(CCL)</a></li>
+                        <li><a href="https://mychildcareplan.org/" target="_blank">My Child Care Plan</a></li>
+                        <li><a href="https://www.cdss.ca.gov/inforesources/child-care-licensing/child-care-advocates" target="_blank">Child Care Advocates</a></li>
+                        <li><a href="https://www.cdss.ca.gov/Portals/9/Additional-Resources/Research-and-Data/DSSDS/030119%20Parent's%20Guide%20to%20Choosing%20Child%20Care_Revision%20Safe%20Sleep.pdf" target="_blank">Parents Guide to Choosing Child Care</a></li>
+                    </ul>
+                    <p>Checklists</p>
+                    <ul>
+                        <li>Facility Inspection checklists are forms provided to the public so as to better understand the Community Care Licensing inspection process.</li>
+                        <li><a href="https://www.cdss.ca.gov/inforesources/forms-brochures/forms-alphabetic-list/i-l" target="_blank">On-line Forms and Publications</a></li>
+                    </ul>
+                    <p>Child Care Pre-Licensing and Standard Inspection Tools</p>
+                    <ul>
+                        <li>Child Care Pre-Licensing Tools are forms provided to the public so as to better prepare individuals for a Pre-Licensing inspection by a Licensing Program Analyst (LPA) with the Community Care Licensing Division.</li>
+                        <li>Child Care Standards Tools are forms provided to the public so as to better prepare an individual for a compliance inspection conducted by a Licensing Program Analyst (LPA) with the Community Care Licensing Division.</li>
+                        <li><a href="https://www.cdss.ca.gov/inforesources/cdss-programs/community-care-licensing/inspection-process-project/care-tools" target="_blank">Compliance and Regulatory Enforcement (CARE) Tools</a></li>
+                    </ul>
+
+                    <p><b>Children’s Residential Program</b></p>
+                    <ul>
+                        <li><a href="https://www.cdss.ca.gov/inforesources/childrens-residential" target="_blank">Children’s Residential Program Homepage</a></li>
+                        <li><a href="https://www.cdss.ca.gov/inforesources/childrens-residential/resources-for-providers/facility-information" target="_blank">Children’s Residential Facility Types</a></li>
+                        <li><a href="https://www.cdss.ca.gov/inforesources/cdss-programs/community-care-licensing/inspection-process-project/care-tools" target="_blank">Childrens Residential Pre-Licensing and Standard Inspection Tools</a></li>
+                    </ul>
+
+                    <p><b>Adult and Senior Care Program</b></p>
+                    <ul>
+                        <li><a href="https://www.cdss.ca.gov/inforesources/adult-care-licensing" target="_blank">Adult Care Home Page</a></li>
+                        <li><a href="https://www.cdss.ca.gov/inforesources/senior-care-licensing" target="_blank">Senior Care Home Page</a></li>
+                    </ul>
+
+                    <p><b>Home Care Services Branch</b></p>
+                    <ul>
+                        <li><a href="https://www.cdss.ca.gov/inforesources/community-care/home-care-services" target="_blank">Home Care Services Branch (home page)</a></li>
+                        <li><a href="https://www.cdss.ca.gov/inforesources/community-care/home-care-services/resources-for-home-care-organizations" target="_blank">Resources for Home Care Organizations</a></li>
+                        <li><a href="https://www.cdss.ca.gov/inforesources/community-care/home-care-services/resources-for-home-care-aides" target="_blank">Resources for Home Care Aides</a></li>
+                        <li><a href="https://www.cdss.ca.gov/inforesources/community-care/home-care-services/resources-for-seniors-and-families" target="_blank">Resources for Seniors and Families</a></li>
+                        <li><a href="https://www.ccld.dss.ca.gov/hcsregistry/registrysearch.aspx" target="_blank">Home Care Aide Registry</a></li>
+                    </ul>
+                </div></div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- PAGE DISCLAIMER -->
+
+    <div class="container_style_e">
+        <h5>Disclaimer</h5>
+        <div class="add_side_padding">
+
+            <b>Questions about this application contact:</b>
+            <ul style="padding-left: 10px;">
+
+                <li>Email: <a href="mailto:cclwebmaster@dss.ca.gov">cclwebmaster@dss.ca.gov</a></li>
+
+            </ul>
+
+            <br>
+            The Community Care Licensing Division of the California Department of Social Services has provided this document search application to provide the public with access to
+            information regarding facilities licensed by the Division.  Such information should only serve as an initial point of inquiry regarding the licensing status and regulatory
+            history of a licensed facility.  To obtain additional information concerning a specific facility, please contact the licensing office responsible for licensing and
+            inspection of the facility.<br>
+            <br>
+            The Department makes no claims, promises, or guarantees about the accuracy, completeness or adequacy of the documents accessible through the use of this application.
+            Accordingly, it disclaims any liability for any errors, omissions or misrepresentations contained in them.  No warranty of any kind, including, but not limited to, express,
+            implied, common law or statutory ones, is given with respect to the use of this application.   No warranties are given with respect to the non-infringement of third party
+            rights and the cybersecurity of the application. <br>
+            <br>
+            <strong>LIMITATION OF LIABILITY </strong><br>
+            CDSS IS NOT LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL OR CONSEQUENTIAL DAMAGES THAT RESULT FROM THE USE OF, OR THE INABILITY TO USE, THIS APPLICATION OR RELIANCE
+            UPON THE CONTENT OF THE MATERIALS ACCESSIBLE THROUGH THE USE OF THIS APPLICATION UNDER ANY CIRCUMSTANCES.<br>
+            <br>
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <!-- InstanceEndEditable -->
+</div>
+</div>
+
+</div>
+
+<!-- ui-view-anchor --><div ui-view="footer" autoscroll="false" class="ng-scope"><!--include virtual="/ssi/footer_2.html" -->
+
+<footer id="footer_2" class="clearfix ng-scope" ng-controller="footerController">
+    <stt-class>
+        <a ng-click="scrollToTop(1)">Back to Top</a> <a href="http://www.cdss.ca.gov/Conditions-of-Use">Conditions of Use</a> <a href="http://www.cdss.ca.gov/Privacy-Policy">Privacy Policy</a> <a href="http://www.cdss.ca.gov/Accessibility">Accessibility</a> <a href="http://www.cdss.ca.gov/Contact-Us">Contact Us</a>
+    </stt-class>
+    <p>
+    </p><div class="ng-binding">
+        Transparency v 1.0.1
+    </div>
+    <div>
+        Copyright © 2013-2014 State of California
+    </div>
+    <p></p>
+</footer>
+
+<div id="background_decorative" class="ng-scope">&nbsp;</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+</body></html>

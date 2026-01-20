@@ -1,0 +1,704 @@
+<html class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths js no-flexbox flexbox-legacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths" lang="en"><head><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+    <!--
+        Customize the content security policy in the meta tag below as needed. Add 'unsafe-inline' to default-src to enable inline JavaScript.
+        For details, see http://go.microsoft.com/fwlink/?LinkID=617521
+    -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Security-Policy" content="default-src *  data: gap: https://localhost http://localhost:59224 https://maps.googleapis.com http://www.ccld.ca.gov http://*.google-analytics.com https://*.google-analytics.com https://sectest.dss.ca.gov https://secure.dss.ca.gov https://www.google.com https://ssl.gstatic.com 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://use.fontawesome.com; font-src 'self' 'unsafe-inline' https://use.fontawesome.com; media-src *">
+    <script>document.write('<base href="' + document.location + '" />');</script><base href="https://www.ccld.dss.ca.gov/carefacilitysearch/">
+    <!-- TODONote  fix base href for appropiate deployment-->
+    <!--<base href="/TransparencyApp/" />-->
+
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=2, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <title>Social Services - Community Care Facility search</title>
+
+    <meta charset="utf-8">
+
+    <meta name="Author" content="Department of Social Services, State of California">
+    <meta name="Description" content="Care facility search">
+    <meta name="Keywords" content="California, government, elder care, child care">
+
+
+
+    <!-- http://t.co/dKP3o1e -->
+    <meta name="HandheldFriendly" content="True"> <!-- for Blackberry, AvantGo -->
+    <meta name="MobileOptimized" content="320"> <!-- for Windows mobile -->
+    <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0">
+
+
+    <!-- For all browsers -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--
+    Step 3
+    Select a color scheme:
+
+    <link rel="stylesheet" href="/CountySite/css/colorscheme_oceanside.css">
+    <link rel="stylesheet" href="/CountySite/css/colorscheme_orangecounty.css">
+    <link rel="stylesheet" href="/CountySite/css/colorscheme_pasorobles.css">
+    <link rel="stylesheet" href="/CountySite/css/colorscheme_santabarbara.css">
+    <link rel="stylesheet" href="/CountySite/css/colorscheme_sierra.css">
+    -->
+    <!-- county --><!--link rel="stylesheet" href="css/colorscheme_pasorobles_mod2.css"-->
+    <!-- public -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">-->
+    <link rel="stylesheet" href="css/colorscheme_santabarbara.css">
+
+
+    <link rel="stylesheet" media="print" href="css/print.css">
+    <!-- For progressively larger displays -->
+    <link rel="stylesheet" media="only screen and (min-width: 480px)" href="css/480.css">
+    <link rel="stylesheet" media="only screen and (min-width: 600px)" href="css/600.css">
+    <link rel="stylesheet" media="only screen and (min-width: 768px)" href="css/768.css">
+    <!-- <link rel="stylesheet" media="only screen and (min-width: 992px)" href="/css/992.css"> -->
+    <link rel="stylesheet" media="only screen and (min-width: 1280px)" href="css/1280.css">
+    <!-- For Retina displays -->
+    <!-- <link rel="stylesheet" media="only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5)" href="/css/2x.css"> -->
+    <!-- selectivizr.com, emulates CSS3 pseudo-classes and attribute selectors in Internet Explorer 6-8 -->
+    <!--[if (lt IE 9) & (!IEMobile)]>
+    <script src="/javascript/libs/selectivizr-min.js"></script>
+    <![endif]-->
+    <!-- modernizr.com, feature detection -->
+    <script src="scripts/libs/modernizr-2.0.6.min.js"></script>
+
+    <!-- For iPad 3-->
+    <link rel="apple-touch-icon" sizes="144x144" href="images/template2013/apple-touch-icon-144x144.png">
+    <!-- For iPhone 4 -->
+    <link rel="apple-touch-icon" sizes="114x114" href="images/template2013/apple-touch-icon-114x114.png">
+    <!-- For iPad 1-->
+    <link rel="apple-touch-icon" sizes="72x72" href="images/template2013/apple-touch-icon-72x72.png">
+    <!-- For iPhone 3G, iPod Touch and Android -->
+    <link rel="apple-touch-icon" href="images/template2013/apple-touch-icon-57x57.png">
+    <!-- For Nokia -->
+    <link rel="shortcut icon" href="images/template2013/apple-touch-icon-57x57.png">
+    <!-- For everything else -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <!--Microsoft. Activate ClearType. Use highest compatibility mode, enable Chrome Frame -->
+    <!--[if IE]>
+    <meta http-equiv="cleartype" content="on">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <![endif]-->
+    <!--[if lt IE 9]>
+    <script src="/javascript/libs/respond.min.js"></script>
+    <![endif]-->
+    <!-- Styles.Render("~/Content/themes/base/css") -->
+
+
+    <link href="css/select.css" rel="stylesheet"><!-- angular select style sheet-->
+    <link href="css/select2.css" rel="stylesheet"><!-- angular select style sheet-->
+    <link href="css/selectize.default.css" rel="stylesheet"><!-- angular select style sheet-->
+    <link href="css/angular-tooltips.css" rel="stylesheet"><!-- angular select style sheet-->
+    <!--    <link href="css/themes/sunny/jquery-ui-1.10.4.custom.css" rel="stylesheet" />-->
+
+    <link href="css/ReactTablecss/bootstrap-glyphicons.css" rel="stylesheet">
+    <link href="css/ReactTablecss/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/ReactTablecss/bootstrap.css" rel="stylesheet">
+    <link href="css/ReactTablecss/bootstrapSwitch.css" rel="stylesheet">
+
+    <!--<link href="css/jquery.qtip.css" rel="stylesheet" />
+    <link href="css/jquery.sBubble-0.1.1.css" rel="stylesheet" />
+
+    <link href="css/ReactTablecss/footable.core.min.css" rel="stylesheet" />-->
+    <!--link href="/CountySite/Content/site.css" rel="stylesheet" /-->
+    <!--   <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.css">-->
+    <!--<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/select2/3.4.5/select2.css">-->
+    <!--<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.8.5/css/selectize.default.css">-->
+
+    <link rel="stylesheet" href="css/transparency.css">
+
+    <script type="text/javascript" src="scripts/angular.js"></script>
+    <script type="text/javascript" src="scripts/angular-ui-router.min.js"></script>
+    <script type="text/javascript" src="scripts/angular-sanitize.min.js"></script>
+    <script type="text/javascript" src="scripts/angular-animate.min.js"></script>
+    <script type="text/javascript" src="scripts/angular-tooltips.js"></script>
+    <script type="text/javascript" src="scripts/select.min.js"></script> <!-- angular select-->
+    <script type="text/javascript" src="scripts/platformOverrides.js"></script>
+    <script type="text/javascript" src="scripts/ui-bootstrap-tpls-0.10.js"></script>
+    <script type="text/javascript" src="scripts/xml2json.js"></script>
+    <script type="text/javascript" src="javascript/GALocalStorage.js"></script>
+
+    <!--<script type="text/javascript" src="scripts/js.1.10/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>-->
+    <script type="text/javascript" src="javascript/Config.js"></script>
+    <script type="text/javascript" src="javascript/scripts.js"></script>
+    <script type="text/javascript" src="javascript/tree.js"></script>
+    <script type="text/javascript" src="javascript/index.js"></script>
+    <script type="text/javascript" src="javascript/GALocalStorage.js"></script>
+    <script type="text/javascript" src="javascript/transparencyApp.js"></script>
+
+    <script type="text/javascript" src="javascript/Controller/facListController.js"></script>
+    <script type="text/javascript" src="javascript/Controller/footerController.js"></script>
+    <script type="text/javascript" src="javascript/Controller/searchController.js"></script>
+    <script type="text/javascript" src="javascript/Controller/groupController.js"></script>
+    <script type="text/javascript" src="javascript/Controller/glossaryController.js"></script>
+    <script type="text/javascript" src="javascript/Controller/phoneHeaderController.js"></script>
+    <script type="text/javascript" src="javascript/Controller/facDetailController.js"></script>
+    <script type="text/javascript" src="javascript/Controller/emailController.js"></script>
+    <script type="text/javascript" src="javascript/Controller/downloadController.js"></script>
+    <script type="text/javascript" src="javascript/Controller/faqController.js"></script>
+    <script type="text/javascript" src="javascript/Controller/announcementController.js"></script>
+
+
+    <script type="text/javascript" src="scripts/modernizr-2.5.3.js"></script>
+
+<style type="text/css" media="">#navigation.phone_show_nav {	height:240px;}</style></head>
+
+
+<body ng-app="transparencyApp" class="clearfix ng-scope">
+   
+
+
+
+    <!-- ui-view-anchor --><div ui-view="" autoscroll="false" class="" style=""><!-- ui-view-anchor --><div ui-view="header" autoscroll="false" class="ng-scope"><div ng-controller="phone_hdrController" class="ng-scope">
+    <header role="banner" class="phoneHeader">
+        <div id="skip_to_content"><a href="#main_content">Skip to Main Content</a></div>
+
+
+        <div class="phone_hdr" ng-click="menu_click()">
+            <div class="phone_hd_left">
+                <a class="p_h_button p_h_menu" id="ResponsiveMenu" ng-click="toggle = !toggle"><img src="images/template2013/clear.gif" alt="Menu"></a>
+            </div>
+            <div class="phone_hd_right">
+                <a class="p_h_button p_h_contact" href="/FacilityInquiry.html"><img src="images/template2013/clear.gif" alt="Contact Us"></a>
+                <a class="p_h_button p_h_search" id="ResponsiveSearch" ng-click="toggle_search()"><img src="images/template2013/clear.gif" alt="Search"></a>
+            </div>
+            <div class="logo_and_banner">
+                <div class="head_cagov_logo"><a target="_blank" href="http://www.ca.gov/"><img src="images/template2013/header-ca.gov.png" alt="CA.gov"></a></div>
+                <div class="head_organization_banner"><a target="_blank" href="http://www.cdss.ca.gov/"><img src="images/template2013/header_organization.png" alt="Organization Title"></a></div>
+            </div>
+        </div>
+
+
+        <!-- Using padding alternative to replace the DownloadData Menu option by Victor Wong 2/4/2015	-->
+        <nav id="navigation" ng-class="{phone_show_nav: toggle}">
+            <!-- ngIf: TransparencyMode == 'Public' --><div ng-if="TransparencyMode == 'Public'" class="ng-scope">
+                <ul id="nav_list">
+                    <li><a ui-sref="index" class="nav_level1_link" href="/"><span id="nav_home_container"></span><img src="images/template2013/clear.gif" alt="Home">&nbsp;</a></li>
+                    <li class="homeLink"><a ui-sref="index" class="nav_level1_link" href="/">Home</a></li>
+                    <li><a ui-sref="downloaddata" class="nav_level1_link" href="/DownloadData">Download Data</a></li>
+                    <li><a href="https://cdss.ca.gov/inforesources/community-care-licensing" target="_blank" class="nav_level1_link">State Offices</a></li>
+                    <li><a ui-sref="faqlist({id:'full'})" class="nav_level1_link" href="/FAQList/full">FAQ</a></li>
+                    <li><a ui-sref="glossary" class="nav_level1_link" href="/Glossary">Glossary</a></li>
+                </ul>
+            </div><!-- end ngIf: TransparencyMode == 'Public' -->
+            <!-- ngIf: TransparencyMode == 'County' -->
+        </nav>
+
+        <div id="img_ribbon"></div>
+    </header>
+    <div ng-class="spacerclass" class="menucollapsed"></div>
+</div></div>
+
+<!-- ui-view-anchor --><div ui-view="main" autoscroll="false" class="ng-scope"><!--style> 
+    .selectize-control { display:inline-block; width:250px  }
+</style-->
+<div id="main_content" class="clearfix ng-scope" ng-controller="searchController as ctrl">
+    <div class="content_left_column clearfix">
+        <div class="add_maincontent_padding">
+            <!-- InstanceBeginEditable name="MainContent" -->
+
+            <div class="container_style_b ng-hide" ng-show="ctrl.selectedGroup.id == 'HomeCareOrg'" style="overflow:visible;">
+                <div class="message_in_container">
+                    For more information on specific Home Care Organization visits, citations, inspections, complaints, locations, and reports, please contact the Home Care Services Bureau at HCSB@dss.ca.gov [mailto:HCSB@dss.ca.gov] or (877) 424-5778.
+                </div>
+            </div>
+
+            <div class="container_style_a">
+                <h4>Search <span style="font-style:italic; font-weight:lighter;" class="ng-binding"> Group selected: [ Elderly Assisted Living ] </span> </h4>
+                <div class="">
+                    <form ng-submit="ctrl.searchSubmit()" class="ng-pristine ng-valid ng-valid-pattern ng-valid-maxlength">
+                        <table style="font:arial; font-size:medium; font-size:small; margin-left:auto; margin-right:auto;  width:80%; padding:0px 10px;" border="0">
+
+                            <tbody><tr>
+                                <td style="text-align:center">
+                                    Please start your search by selecting <!-- ngIf: ctrl.facilityType.selected.facility_name_search_mode != 'exact' --><span ng-if="ctrl.facilityType.selected.facility_name_search_mode != 'exact'" class="ng-scope">one or more of </span><!-- end ngIf: ctrl.facilityType.selected.facility_name_search_mode != 'exact' --> the available criteria below.<br><br>
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div style="padding-left:10px;float:left;  min-width:150px; font-weight:bold;">
+                                        Facility Type:
+
+                                    </div>
+                                    <!--  http://angular-ui.github.io/ui-select/  -->
+                                    <!-- ngIf: ctrl.isMobile == false --><div ng-if="ctrl.isMobile == false" class="ng-scope">
+                                        <div class="uiselect ui-select-container selectize-control single ng-pristine ng-untouched ng-valid ng-scope ng-not-empty" ng-class="{'open': $select.open}" ng-disabled="ctrl.FacilityNumber != ''" ng-model="ctrl.facilityType.selected" theme="selectize" title="Choose a facility type"><div class="selectize-input" ng-class="{'focus': $select.open, 'disabled': $select.disabled, 'selectize-focus' : $select.focus}" ng-click="$select.open &amp;&amp; !$select.searchEnabled ? $select.toggle($event) : $select.activate()"><div ng-hide="$select.searchEnabled &amp;&amp; ($select.open || $select.isEmpty())" class="ui-select-match ng-scope" ng-transclude=""><span class="ng-binding ng-scope">Assisted Living</span></div><input type="search" autocomplete="off" tabindex="-1" class="ui-select-search ui-select-toggle ng-pristine ng-untouched ng-valid ng-empty ng-hide" ng-click="$select.toggle($event)" placeholder="" ng-model="$select.search" ng-hide="!$select.searchEnabled || (!$select.isEmpty() &amp;&amp; !$select.open)" ng-disabled="$select.disabled" aria-label="Choose a facility type"></div><div ng-show="$select.open" class="ui-select-choices ui-select-dropdown selectize-dropdown single ng-scope ng-hide" repeat="facilityType in ctrl.selectedGroup.facility_type | filter: $select.search"><div class="ui-select-choices-content selectize-dropdown-content"><div class="ui-select-choices-group optgroup" role="listbox"><div ng-show="$select.isGrouped" class="ui-select-choices-group-label optgroup-header ng-binding ng-hide" ng-bind="$group.name"></div><!-- ngRepeat: facilityType in $select.items --><!-- ngIf: $select.open --><!-- end ngRepeat: facilityType in $select.items --><!-- ngIf: $select.open --><!-- end ngRepeat: facilityType in $select.items --></div></div></div><div class="ui-select-no-choice"></div><ui-select-single></ui-select-single><input ng-disabled="$select.disabled" class="ui-select-focusser ui-select-offscreen ng-scope" type="text" id="focusser-0" aria-label="Choose a facility type focus" aria-haspopup="true" role="button"></div>
+                                    </div><!-- end ngIf: ctrl.isMobile == false -->
+                                    <!-- ngIf: ctrl.isMobile == true -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align:center; font-weight:bold;">    AND <!-- ngIf: ctrl.facilityType.selected.facility_name_search_mode != 'exact' --><span ng-if="ctrl.facilityType.selected.facility_name_search_mode != 'exact'" class="ng-scope">one of </span><!-- end ngIf: ctrl.facilityType.selected.facility_name_search_mode != 'exact' -->the following:  <br><br></td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div style="padding-left:10px;float:left; min-width:150px; font-weight:bold">
+                                        Facility Name: <br>
+                                        <!-- ngIf: ctrl.facilityType.selected.facility_name_search_mode == 'exact' -->
+                                    </div>
+                                    <div id="errorspot">
+                                        <!-- ngIf: ctrl.FacilityNumber == '' && ctrl.facilityType.selected.facility_name_search_mode == 'exact' -->
+                                        <!-- ngIf: ctrl.FacilityNumber == '' && ctrl.facilityType.selected.facility_name_search_mode != 'exact' --><input ng-if="ctrl.FacilityNumber == '' &amp;&amp; ctrl.facilityType.selected.facility_name_search_mode != 'exact'" ng-model="ctrl.FacilityName" ng-disabled="ctrl.facilityType.selected.facility_name_search_mode == 'disabled'" type="text" class="box1 ng-pristine ng-untouched ng-valid ng-scope ng-empty" name="facility" id="facility"><!-- end ngIf: ctrl.FacilityNumber == '' && ctrl.facilityType.selected.facility_name_search_mode != 'exact' -->
+                                        <!-- ngIf: ctrl.FacilityNumber != '' -->
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div style="padding-left:10px;float:left; min-width:150px; font-weight:bold">Street: </div>
+                                    <!-- ngIf: ctrl.FacilityNumber == '' && ctrl.facilityType.selected.street_search_mode == 'disabled' -->
+                                    <!-- ngIf: ctrl.FacilityNumber == '' && ctrl.facilityType.selected.street_search_mode != 'disabled' --><div ng-if="ctrl.FacilityNumber == '' &amp;&amp; ctrl.facilityType.selected.street_search_mode != 'disabled'" class="ng-scope"><input ng-model="ctrl.Street" type="text" class="box1 ng-pristine ng-untouched ng-valid ng-empty" name="Street" id="Street"></div><!-- end ngIf: ctrl.FacilityNumber == '' && ctrl.facilityType.selected.street_search_mode != 'disabled' -->
+                                    <!-- ngIf: ctrl.FacilityNumber != '' -->
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div style="padding-left:10px;float:left; min-width:150px; font-weight:bold">City: </div>
+                                    <!-- ngIf: ctrl.FacilityNumber == '' && ctrl.facilityType.selected.city_search_mode == 'disabled' -->
+                                    <!-- ngIf: ctrl.FacilityNumber == '' && ctrl.facilityType.selected.city_search_mode != 'disabled' --><div ng-if="ctrl.FacilityNumber == '' &amp;&amp; ctrl.facilityType.selected.city_search_mode != 'disabled'" class="ng-scope"><input ng-model="ctrl.City" class="box1 ng-pristine ng-untouched ng-valid ng-empty" type="text" id="city" name="city"></div><!-- end ngIf: ctrl.FacilityNumber == '' && ctrl.facilityType.selected.city_search_mode != 'disabled' -->
+                                    <!-- ngIf: ctrl.FacilityNumber != '' -->
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div style="padding-left:10px;float:left; min-width:150px; font-weight:bold">Zip code: </div>
+                                    <!-- ngIf: ctrl.FacilityNumber == '' && ctrl.facilityType.selected.city_search_mode == 'disabled' -->
+                                    <!-- ngIf: ctrl.FacilityNumber == '' && ctrl.facilityType.selected.city_search_mode != 'disabled' --><div ng-if="ctrl.FacilityNumber == '' &amp;&amp; ctrl.facilityType.selected.city_search_mode != 'disabled'" class="ng-scope"><input ng-model="ctrl.ZipCode" class="box1 ng-pristine ng-untouched ng-valid ng-empty" type="text" id="zip" name="zip"></div><!-- end ngIf: ctrl.FacilityNumber == '' && ctrl.facilityType.selected.city_search_mode != 'disabled' -->
+                                    <!-- ngIf: ctrl.FacilityNumber != '' -->
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div style="padding-left:10px;float:left; min-width:150px; font-weight:bold">County: </div>
+                                    <!-- ngIf: ctrl.FacilityNumber == '' && ctrl.facilityType.selected.county_search_mode != 'disabled' --><div ng-if="ctrl.FacilityNumber == '' &amp;&amp; ctrl.facilityType.selected.county_search_mode != 'disabled'" class="ng-scope">
+                                        <select ng-model="ctrl.County" theme="selectize" title="Select a county" class="uiselect ng-pristine ng-untouched ng-valid ng-empty">
+                                            <option value="" disabled="" selected="">
+                                                Select a county
+                                            </option>
+                                            <!-- ngRepeat: county in ctrl.counties --><option ng-repeat="county in ctrl.counties" value="Alameda" class="ng-binding ng-scope">
+                                                Alameda
+                                            </option><!-- end ngRepeat: county in ctrl.counties --><option ng-repeat="county in ctrl.counties" value="Alpine" class="ng-binding ng-scope">
+                                                Alpine
+                                            </option><!-- end ngRepeat: county in ctrl.counties --><option ng-repeat="county in ctrl.counties" value="Amador" class="ng-binding ng-scope">
+                                                Amador
+                                            </option><!-- end ngRepeat: county in ctrl.counties --><option ng-repeat="county in ctrl.counties" value="Butte" class="ng-binding ng-scope">
+                                                Butte
+                                            </option><!-- end ngRepeat: county in ctrl.counties --><option ng-repeat="county in ctrl.counties" value="Calaveras" class="ng-binding ng-scope">
+                                                Calaveras
+                                            </option><!-- end ngRepeat: county in ctrl.counties --><option ng-repeat="county in ctrl.counties" value="Colusa" class="ng-binding ng-scope">
+                                                Colusa
+                                            </option><!-- end ngRepeat: county in ctrl.counties --><option ng-repeat="county in ctrl.counties" value="Contra Costa" class="ng-binding ng-scope">
+                                                Contra Costa
+                                            </option><!-- end ngRepeat: county in ctrl.counties --><option ng-repeat="county in ctrl.counties" value="Del Norte" class="ng-binding ng-scope">
+                                                Del Norte
+                                            </option><!-- end ngRepeat: county in ctrl.counties --><option ng-repeat="county in ctrl.counties" value="El Dorado" class="ng-binding ng-scope">
+                                                El Dorado
+                                            </option><!-- end ngRepeat: county in ctrl.counties --><option ng-repeat="county in ctrl.counties" value="Fresno" class="ng-binding ng-scope">
+                                                Fresno
+                                            </option><!-- end ngRepeat: county in ctrl.counties --><option ng-repeat="county in ctrl.counties" value="Glenn" class="ng-binding ng-scope">
+                                                Glenn
+                                            </option><!-- end ngRepeat: county in ctrl.counties --><option ng-repeat="county in ctrl.counties" value="Humboldt" class="ng-binding ng-scope">
+                                                Humboldt
+                                            </option><!-- end ngRepeat: county in ctrl.counties --><option ng-repeat="county in ctrl.counties" value="Imperial" class="ng-binding ng-scope">
+                                                Imperial
+                                            </option><!-- end ngRepeat: county in ctrl.counties --><option ng-repeat="county in ctrl.counties" value="Inyo" class="ng-binding ng-scope">
+                                                Inyo
+                                            </option><!-- end ngRepeat: county in ctrl.counties --><option ng-repeat="county in ctrl.counties" value="Kern" class="ng-binding ng-scope">
+                                                Kern
+                                            </option><!-- end ngRepeat: county in ctrl.counties --><option ng-repeat="county in ctrl.counties" value="Kings" class="ng-binding ng-scope">
+                                                Kings
+                                            </option><!-- end ngRepeat: county in ctrl.counties --><option ng-repeat="county in ctrl.counties" value="Lake" class="ng-binding ng-scope">
+                                                Lake
+                                            </option><!-- end ngRepeat: county in ctrl.counties --><option ng-repeat="county in ctrl.counties" value="Lassen" class="ng-binding ng-scope">
+                                                Lassen
+                                            </option><!-- end ngRepeat: county in ctrl.counties --><option ng-repeat="county in ctrl.counties" value="Los Angeles" class="ng-binding ng-scope">
+                                                Los Angeles
+                                            </option><!-- end ngRepeat: county in ctrl.counties --><option ng-repeat="county in ctrl.counties" value="Madera" class="ng-binding ng-scope">
+                                                Madera
+                                            </option><!-- end ngRepeat: county in ctrl.counties --><option ng-repeat="county in ctrl.counties" value="Marin" class="ng-binding ng-scope">
+                                                Marin
+                                            </option><!-- end ngRepeat: county in ctrl.counties --><option ng-repeat="county in ctrl.counties" value="Mariposa" class="ng-binding ng-scope">
+                                                Mariposa
+                                            </option><!-- end ngRepeat: county in ctrl.counties --><option ng-repeat="county in ctrl.counties" value="Mendocino" class="ng-binding ng-scope">
+                                                Mendocino
+                                            </option><!-- end ngRepeat: county in ctrl.counties --><option ng-repeat="county in ctrl.counties" value="Merced" class="ng-binding ng-scope">
+                                                Merced
+                                            </option><!-- end ngRepeat: county in ctrl.counties --><option ng-repeat="county in ctrl.counties" value="Modoc" class="ng-binding ng-scope">
+                                                Modoc
+                                            </option><!-- end ngRepeat: county in ctrl.counties --><option ng-repeat="county in ctrl.counties" value="Mono" class="ng-binding ng-scope">
+                                                Mono
+                                            </option><!-- end ngRepeat: county in ctrl.counties --><option ng-repeat="county in ctrl.counties" value="Monterey" class="ng-binding ng-scope">
+                                                Monterey
+                                            </option><!-- end ngRepeat: county in ctrl.counties --><option ng-repeat="county in ctrl.counties" value="Napa" class="ng-binding ng-scope">
+                                                Napa
+                                            </option><!-- end ngRepeat: county in ctrl.counties --><option ng-repeat="county in ctrl.counties" value="Nevada" class="ng-binding ng-scope">
+                                                Nevada
+                                            </option><!-- end ngRepeat: county in ctrl.counties --><option ng-repeat="county in ctrl.counties" value="Orange" class="ng-binding ng-scope">
+                                                Orange
+                                            </option><!-- end ngRepeat: county in ctrl.counties --><option ng-repeat="county in ctrl.counties" value="Placer" class="ng-binding ng-scope">
+                                                Placer
+                                            </option><!-- end ngRepeat: county in ctrl.counties --><option ng-repeat="county in ctrl.counties" value="Plumas" class="ng-binding ng-scope">
+                                                Plumas
+                                            </option><!-- end ngRepeat: county in ctrl.counties --><option ng-repeat="county in ctrl.counties" value="Riverside" class="ng-binding ng-scope">
+                                                Riverside
+                                            </option><!-- end ngRepeat: county in ctrl.counties --><option ng-repeat="county in ctrl.counties" value="Sacramento" class="ng-binding ng-scope">
+                                                Sacramento
+                                            </option><!-- end ngRepeat: county in ctrl.counties --><option ng-repeat="county in ctrl.counties" value="San Benito" class="ng-binding ng-scope">
+                                                San Benito
+                                            </option><!-- end ngRepeat: county in ctrl.counties --><option ng-repeat="county in ctrl.counties" value="San Bernardino" class="ng-binding ng-scope">
+                                                San Bernardino
+                                            </option><!-- end ngRepeat: county in ctrl.counties --><option ng-repeat="county in ctrl.counties" value="San Diego" class="ng-binding ng-scope">
+                                                San Diego
+                                            </option><!-- end ngRepeat: county in ctrl.counties --><option ng-repeat="county in ctrl.counties" value="San Francisco" class="ng-binding ng-scope">
+                                                San Francisco
+                                            </option><!-- end ngRepeat: county in ctrl.counties --><option ng-repeat="county in ctrl.counties" value="San Joaquin" class="ng-binding ng-scope">
+                                                San Joaquin
+                                            </option><!-- end ngRepeat: county in ctrl.counties --><option ng-repeat="county in ctrl.counties" value="San Luis Obispo" class="ng-binding ng-scope">
+                                                San Luis Obispo
+                                            </option><!-- end ngRepeat: county in ctrl.counties --><option ng-repeat="county in ctrl.counties" value="San Mateo" class="ng-binding ng-scope">
+                                                San Mateo
+                                            </option><!-- end ngRepeat: county in ctrl.counties --><option ng-repeat="county in ctrl.counties" value="Santa Barbara" class="ng-binding ng-scope">
+                                                Santa Barbara
+                                            </option><!-- end ngRepeat: county in ctrl.counties --><option ng-repeat="county in ctrl.counties" value="Santa Clara" class="ng-binding ng-scope">
+                                                Santa Clara
+                                            </option><!-- end ngRepeat: county in ctrl.counties --><option ng-repeat="county in ctrl.counties" value="Santa Cruz" class="ng-binding ng-scope">
+                                                Santa Cruz
+                                            </option><!-- end ngRepeat: county in ctrl.counties --><option ng-repeat="county in ctrl.counties" value="Shasta" class="ng-binding ng-scope">
+                                                Shasta
+                                            </option><!-- end ngRepeat: county in ctrl.counties --><option ng-repeat="county in ctrl.counties" value="Sierra" class="ng-binding ng-scope">
+                                                Sierra
+                                            </option><!-- end ngRepeat: county in ctrl.counties --><option ng-repeat="county in ctrl.counties" value="Siskiyou" class="ng-binding ng-scope">
+                                                Siskiyou
+                                            </option><!-- end ngRepeat: county in ctrl.counties --><option ng-repeat="county in ctrl.counties" value="Solano" class="ng-binding ng-scope">
+                                                Solano
+                                            </option><!-- end ngRepeat: county in ctrl.counties --><option ng-repeat="county in ctrl.counties" value="Sonoma" class="ng-binding ng-scope">
+                                                Sonoma
+                                            </option><!-- end ngRepeat: county in ctrl.counties --><option ng-repeat="county in ctrl.counties" value="Stanislaus" class="ng-binding ng-scope">
+                                                Stanislaus
+                                            </option><!-- end ngRepeat: county in ctrl.counties --><option ng-repeat="county in ctrl.counties" value="Sutter" class="ng-binding ng-scope">
+                                                Sutter
+                                            </option><!-- end ngRepeat: county in ctrl.counties --><option ng-repeat="county in ctrl.counties" value="Tehama" class="ng-binding ng-scope">
+                                                Tehama
+                                            </option><!-- end ngRepeat: county in ctrl.counties --><option ng-repeat="county in ctrl.counties" value="Trinity" class="ng-binding ng-scope">
+                                                Trinity
+                                            </option><!-- end ngRepeat: county in ctrl.counties --><option ng-repeat="county in ctrl.counties" value="Tulare" class="ng-binding ng-scope">
+                                                Tulare
+                                            </option><!-- end ngRepeat: county in ctrl.counties --><option ng-repeat="county in ctrl.counties" value="Tuolumne" class="ng-binding ng-scope">
+                                                Tuolumne
+                                            </option><!-- end ngRepeat: county in ctrl.counties --><option ng-repeat="county in ctrl.counties" value="Ventura" class="ng-binding ng-scope">
+                                                Ventura
+                                            </option><!-- end ngRepeat: county in ctrl.counties --><option ng-repeat="county in ctrl.counties" value="Yolo" class="ng-binding ng-scope">
+                                                Yolo
+                                            </option><!-- end ngRepeat: county in ctrl.counties --><option ng-repeat="county in ctrl.counties" value="Yuba" class="ng-binding ng-scope">
+                                                Yuba
+                                            </option><!-- end ngRepeat: county in ctrl.counties -->
+                                        </select>
+                                    </div><!-- end ngIf: ctrl.FacilityNumber == '' && ctrl.facilityType.selected.county_search_mode != 'disabled' -->
+                                    <!-- ngIf: ctrl.FacilityNumber == '' && ctrl.facilityType.selected.county_search_mode == 'disabled' -->
+                                    <!-- ngIf: ctrl.FacilityNumber!== '' -->
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td style="text-align:center; font-weight:bold;"><br>    OR <!-- ngIf: ctrl.facilityType.selected.facility_name_search_mode != 'exact' --><span ng-if="ctrl.facilityType.selected.facility_name_search_mode != 'exact'" class="ng-scope">search </span><!-- end ngIf: ctrl.facilityType.selected.facility_name_search_mode != 'exact' -->directly by:  <br><br></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div style="padding-left:10px;float:left; min-width:150px; font-weight:bold">
+                                        Facility Number:
+                                    </div><div><input pattern="[0-9]*" ng-model="ctrl.FacilityNumber" class="box1 ng-pristine ng-untouched ng-valid ng-empty ng-valid-pattern ng-valid-maxlength" type="text" id="facnum" name="facnum" maxlength="9" placeholder="Must contain 9 digits"></div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><input type="submit" name="search" id="submitbutton" value="Search">&nbsp;<input type="button" name="clear" id="clearButton" value="Clear" ng-click="ctrl.reset()"></td>
+                            </tr>
+                        </tbody></table>
+                    </form>
+                    <p></p>
+                </div>
+            </div>
+            [ <a ui-sref="index" href="/">Change Facility Group</a> ]
+            <!-- InstanceEndEditable -->
+        </div>
+    </div>
+    <!-- ui-view-anchor --><div ui-view="right" autoscroll="false"><div class="content_right_column clearfix ng-scope">
+    <!-- InstanceBeginEditable name="ContentRightColumn" -->
+
+
+
+
+
+    <style>
+        #accordion {
+            list-style: none;
+            padding: 0 0 0 0;
+            width: 95%;
+        }
+
+            #accordion div {
+                display: block;
+                font-weight: bold;
+                margin: 5px 5px;
+                cursor: pointer;
+                padding: 2px 2px 2px 2px;
+                list-style: circle;
+            }
+
+            #accordion ul {
+                list-style: none;
+                padding: 0 0 0 0;
+            }
+
+            #accordion ul {
+                /*display: none;*/
+            }
+
+                #accordion ul li {
+                    font-weight: normal;
+                    cursor: auto;
+                    background-color: #fff;
+                    padding: 0 0 0 2px;
+                }
+
+            #accordion a {
+                text-decoration: none;
+            }
+
+        /* #accordion a:hover {    text-decoration: underline;} */
+
+        /* Resource Corner Links */
+
+        .transparency-accordion {
+            list-style: none;
+            padding: 0 0 0 0;
+            width: 95%;
+        }
+
+            .transparency-accordion div {
+                display: block;
+                font-weight: bold;
+                margin: 5px 5px;
+                cursor: pointer;
+                padding: 2px 2px 2px 2px;
+                list-style: circle;
+            }
+
+            .transparency-accordion ul {
+/*                list-style: none;
+*/                padding: 0 0 0 0;
+            }
+
+            .transparency-accordion ul {
+                /*display: none;*/
+            }
+
+                .transparency-accordion ul li {
+                    font-weight: normal;
+                    cursor: auto;
+                    background-color: #fff;
+                    padding: 0 0 0 2px;
+                }
+
+            .transparency-accordion a {
+                text-decoration: none;
+            }
+
+            .transparency-accordion b {
+                margin-top: 1em;
+            }
+
+            .transparency-accordion p {
+                margin-top: 1em;
+                font-weight: normal;
+            }
+
+    </style>
+
+
+    <!-- ngIf: showBanner -->
+
+    <!-- code sections below are a central instructon file rendered from the page title -->
+    <div ng-show="showFAQ" class="container_style_d">
+        <h5 style="color:White" class="ng-binding">Search FAQ</h5>
+        <div class="add_side_padding">
+
+            <!-- ui-view-anchor --><div ui-view="MyAccordianView" autoscroll="false"><!--http://jsfiddle.net/3sVz8/19/-->
+<div ng-controller="faqController as faqCtrl" class="ng-scope">
+    <ul id="accordion">
+        <!-- ngRepeat: item in faqCtrl.json track by $index --><!-- ngIf: faqCtrl.json.length !== undefined --><li ng-if="faqCtrl.json.length !== undefined" ng-repeat="item in faqCtrl.json track by $index" class="ng-scope">
+            <div slide-toggle="#derp0" class="ng-binding"><img src="images/template2013/bullet_blue_disc.png" alt="Blue Disk"> What is the best way to search?</div>
+            <div id="derp0" class="slideable" style="overflow: hidden; height: 0px; transition-property: height; transition-duration: 250ms; transition-timing-function: ease-in-out;"><div class="slideable_content" style="margin:0 !important; padding:0 !important"><ul><li ng-bind-html="item.answer" class="ng-binding">Select just one or a few of the available search terms. You will be able to filter your search on the Results screen.</li></ul></div></div>
+        </li><!-- end ngIf: faqCtrl.json.length !== undefined --><!-- end ngRepeat: item in faqCtrl.json track by $index --><!-- ngIf: faqCtrl.json.length !== undefined --><li ng-if="faqCtrl.json.length !== undefined" ng-repeat="item in faqCtrl.json track by $index" class="ng-scope">
+            <div slide-toggle="#derp1" class="ng-binding"><img src="images/template2013/bullet_blue_disc.png" alt="Blue Disk"> Where can I find the definitions of the facility types?</div>
+            <div id="derp1" class="slideable" style="overflow: hidden; height: 0px; transition-property: height; transition-duration: 250ms; transition-timing-function: ease-in-out;"><div class="slideable_content" style="margin:0 !important; padding:0 !important"><ul><li ng-bind-html="item.answer" class="ng-binding"> The definitions for the facility types can be found on the Glossary page. </li></ul></div></div>
+        </li><!-- end ngIf: faqCtrl.json.length !== undefined --><!-- end ngRepeat: item in faqCtrl.json track by $index --><!-- ngIf: faqCtrl.json.length !== undefined --><li ng-if="faqCtrl.json.length !== undefined" ng-repeat="item in faqCtrl.json track by $index" class="ng-scope">
+            <div slide-toggle="#derp2" class="ng-binding"><img src="images/template2013/bullet_blue_disc.png" alt="Blue Disk"> I am looking for Foster Family Homes. Why can't I find them.</div>
+            <div id="derp2" class="slideable" style="overflow: hidden; height: 0px; transition-property: height; transition-duration: 250ms; transition-timing-function: ease-in-out;"><div class="slideable_content" style="margin:0 !important; padding:0 !important"><ul><li ng-bind-html="item.answer" class="ng-binding">The publication of names and addresses of Foster Family Homes is restricted by law and considered confidential.</li></ul></div></div>
+        </li><!-- end ngIf: faqCtrl.json.length !== undefined --><!-- end ngRepeat: item in faqCtrl.json track by $index --><!-- ngIf: faqCtrl.json.length !== undefined --><li ng-if="faqCtrl.json.length !== undefined" ng-repeat="item in faqCtrl.json track by $index" class="ng-scope">
+            <div slide-toggle="#derp3" class="ng-binding"><img src="images/template2013/bullet_blue_disc.png" alt="Blue Disk"> Why can't I find the addresses for Small Family Child Care homes (less than 8 children)?</div>
+            <div id="derp3" class="slideable" style="overflow: hidden; height: 0px; transition-property: height; transition-duration: 250ms; transition-timing-function: ease-in-out;"><div class="slideable_content" style="margin:0 !important; padding:0 !important"><ul><li ng-bind-html="item.answer" class="ng-binding"> Because these are Child Care providers' homes, the publication of addresses is restricted. To find Small Family Child Care home providers in your area, contact the <a href="http://www.rrnetwork.org/find_child_care" target="_blank"> Resource and Referral Network</a> or call 1-800-KIDS-793. The Network can also assist you in searching for the right child care for your child and can provide you with addresses of facilities in your area.</li></ul></div></div>
+        </li><!-- end ngIf: faqCtrl.json.length !== undefined --><!-- end ngRepeat: item in faqCtrl.json track by $index --><!-- ngIf: faqCtrl.json.length !== undefined --><li ng-if="faqCtrl.json.length !== undefined" ng-repeat="item in faqCtrl.json track by $index" class="ng-scope">
+            <div slide-toggle="#derp4" class="ng-binding"><img src="images/template2013/bullet_blue_disc.png" alt="Blue Disk"> Why can't I see or search on street addresses for Large Family Child Care Homes?</div>
+            <div id="derp4" class="slideable" style="overflow: hidden; height: 0px; transition-property: height; transition-duration: 250ms; transition-timing-function: ease-in-out;"><div class="slideable_content" style="margin:0 !important; padding:0 !important"><ul><li ng-bind-html="item.answer" class="ng-binding"> For Large Family Child Care Homes, you can still search using the City, Zip and County options. To obtain the address of a Large Family Child Care Home, please contact either the State Licensing Office, the <a href="http://www.rrnetwork.org/find_child_care" target="_blank"> Resource and Referral Network</a> or call 1-800-KIDS-793.</li></ul></div></div>
+        </li><!-- end ngIf: faqCtrl.json.length !== undefined --><!-- end ngRepeat: item in faqCtrl.json track by $index --><!-- ngIf: faqCtrl.json.length !== undefined --><li ng-if="faqCtrl.json.length !== undefined" ng-repeat="item in faqCtrl.json track by $index" class="ng-scope">
+            <div slide-toggle="#derp5" class="ng-binding"><img src="images/template2013/bullet_blue_disc.png" alt="Blue Disk"> Why can't I find the addresses for the following 24 Hour Residential Care Facilities for Children such as Group Homes, Out-of-State Group Homes and Community Treatment Facilities?</div>
+            <div id="derp5" class="slideable" style="overflow: hidden; height: 0px; transition-property: height; transition-duration: 250ms; transition-timing-function: ease-in-out;"><div class="slideable_content" style="margin:0 !important; padding:0 !important"><ul><li ng-bind-html="item.answer" class="ng-binding">The addresses were removed from this website in an effort to protect the safety and wellbeing of clients served by these facilities.  Information regarding facilities posted on the website can be obtained by contacting the local State Licensing Office.  To view a list of licensing offices by clicking on the following link:</li></ul></div></div>
+        </li><!-- end ngIf: faqCtrl.json.length !== undefined --><!-- end ngRepeat: item in faqCtrl.json track by $index --><!-- ngIf: faqCtrl.json.length !== undefined --><li ng-if="faqCtrl.json.length !== undefined" ng-repeat="item in faqCtrl.json track by $index" class="ng-scope">
+            <div slide-toggle="#derp6" class="ng-binding"><img src="images/template2013/bullet_blue_disc.png" alt="Blue Disk"> Why can't I get a list of Small Family Child Care homes?</div>
+            <div id="derp6" class="slideable" style="overflow: hidden; height: 0px; transition-property: height; transition-duration: 250ms; transition-timing-function: ease-in-out;"><div class="slideable_content" style="margin:0 !important; padding:0 !important"><ul><li ng-bind-html="item.answer" class="ng-binding">Information related to Small Family Child Care homes is restricted by law. Small Family Child Care home information is available to provide consumer information to parents with children in care and to parents seeking child care from a local child care home.</li></ul></div></div>
+        </li><!-- end ngIf: faqCtrl.json.length !== undefined --><!-- end ngRepeat: item in faqCtrl.json track by $index --><!-- ngIf: faqCtrl.json.length !== undefined --><li ng-if="faqCtrl.json.length !== undefined" ng-repeat="item in faqCtrl.json track by $index" class="ng-scope">
+            <div slide-toggle="#derp7" class="ng-binding"><img src="images/template2013/bullet_blue_disc.png" alt="Blue Disk"> What is a Home Care Organization?</div>
+            <div id="derp7" class="slideable" style="overflow: hidden; height: 0px; transition-property: height; transition-duration: 250ms; transition-timing-function: ease-in-out;"><div class="slideable_content" style="margin:0 !important; padding:0 !important"><ul><li ng-bind-html="item.answer" class="ng-binding">A Home Care Organization is a CDSS licensed entity that arranges for home care services by an affiliated home care aide to a client.  This entity can be an individual who is 18 years of age or older, firm, partnership, corporation, Limited Liability Company, joint venture, association, etc.</li></ul></div></div>
+        </li><!-- end ngIf: faqCtrl.json.length !== undefined --><!-- end ngRepeat: item in faqCtrl.json track by $index --><!-- ngIf: faqCtrl.json.length !== undefined --><li ng-if="faqCtrl.json.length !== undefined" ng-repeat="item in faqCtrl.json track by $index" class="ng-scope">
+            <div slide-toggle="#derp8" class="ng-binding"><img src="images/template2013/bullet_blue_disc.png" alt="Blue Disk"> How often is the data updated?</div>
+            <div id="derp8" class="slideable" style="overflow: hidden; height: 0px; transition-property: height; transition-duration: 250ms; transition-timing-function: ease-in-out;"><div class="slideable_content" style="margin:0 !important; padding:0 !important"><ul><li ng-bind-html="item.answer" class="ng-binding">The data is updated weekly.</li></ul></div></div>
+        </li><!-- end ngIf: faqCtrl.json.length !== undefined --><!-- end ngRepeat: item in faqCtrl.json track by $index -->
+        <!-- ngIf: faqCtrl.json.length === undefined -->
+     </ul>
+</div></div>
+
+        </div>
+    </div>
+
+    <!-- Resource Corner Links -->
+
+    <div class="container_style_d">
+        <h5 style="color:White">Consumer and Family Resources</h5>
+        <ul class="transparency-accordion">
+            <li>
+                <div slide-toggle="#contentResCorner"><img src="images/template2013/bullet_blue_disc.png" alt="Blue Disk"> Click to show/hide</div>
+                <div id="contentResCorner" class="slideable" style="margin-left: 1em; overflow: hidden; height: 0px; transition-property: height; transition-duration: 250ms; transition-timing-function: ease-in-out;"><div class="slideable_content" style="margin:0 !important; padding:0 !important">
+                    <p><b>Child Care Program</b></p>
+                    <p>Home Pages</p>
+                    <ul>
+                        <li><a href="https://www.cdss.ca.gov/inforesources/community-care-licensing" target="_blank">Community Care Licensing Division(CCLD) page</a></li>
+                        <li><a href="https://www.cdss.ca.gov/inforesources/child-care-licensing" target="_blank">Child Care Licensing Page(CCL)</a></li>
+                        <li><a href="https://mychildcareplan.org/" target="_blank">My Child Care Plan</a></li>
+                        <li><a href="https://www.cdss.ca.gov/inforesources/child-care-licensing/child-care-advocates" target="_blank">Child Care Advocates</a></li>
+                        <li><a href="https://www.cdss.ca.gov/Portals/9/Additional-Resources/Research-and-Data/DSSDS/030119%20Parent's%20Guide%20to%20Choosing%20Child%20Care_Revision%20Safe%20Sleep.pdf" target="_blank">Parents Guide to Choosing Child Care</a></li>
+                    </ul>
+                    <p>Checklists</p>
+                    <ul>
+                        <li>Facility Inspection checklists are forms provided to the public so as to better understand the Community Care Licensing inspection process.</li>
+                        <li><a href="https://www.cdss.ca.gov/inforesources/forms-brochures/forms-alphabetic-list/i-l" target="_blank">On-line Forms and Publications</a></li>
+                    </ul>
+                    <p>Child Care Pre-Licensing and Standard Inspection Tools</p>
+                    <ul>
+                        <li>Child Care Pre-Licensing Tools are forms provided to the public so as to better prepare individuals for a Pre-Licensing inspection by a Licensing Program Analyst (LPA) with the Community Care Licensing Division.</li>
+                        <li>Child Care Standards Tools are forms provided to the public so as to better prepare an individual for a compliance inspection conducted by a Licensing Program Analyst (LPA) with the Community Care Licensing Division.</li>
+                        <li><a href="https://www.cdss.ca.gov/inforesources/cdss-programs/community-care-licensing/inspection-process-project/care-tools" target="_blank">Compliance and Regulatory Enforcement (CARE) Tools</a></li>
+                    </ul>
+
+                    <p><b>Children’s Residential Program</b></p>
+                    <ul>
+                        <li><a href="https://www.cdss.ca.gov/inforesources/childrens-residential" target="_blank">Children’s Residential Program Homepage</a></li>
+                        <li><a href="https://www.cdss.ca.gov/inforesources/childrens-residential/resources-for-providers/facility-information" target="_blank">Children’s Residential Facility Types</a></li>
+                        <li><a href="https://www.cdss.ca.gov/inforesources/cdss-programs/community-care-licensing/inspection-process-project/care-tools" target="_blank">Childrens Residential Pre-Licensing and Standard Inspection Tools</a></li>
+                    </ul>
+
+                    <p><b>Adult and Senior Care Program</b></p>
+                    <ul>
+                        <li><a href="https://www.cdss.ca.gov/inforesources/adult-care-licensing" target="_blank">Adult Care Home Page</a></li>
+                        <li><a href="https://www.cdss.ca.gov/inforesources/senior-care-licensing" target="_blank">Senior Care Home Page</a></li>
+                    </ul>
+
+                    <p><b>Home Care Services Branch</b></p>
+                    <ul>
+                        <li><a href="https://www.cdss.ca.gov/inforesources/community-care/home-care-services" target="_blank">Home Care Services Branch (home page)</a></li>
+                        <li><a href="https://www.cdss.ca.gov/inforesources/community-care/home-care-services/resources-for-home-care-organizations" target="_blank">Resources for Home Care Organizations</a></li>
+                        <li><a href="https://www.cdss.ca.gov/inforesources/community-care/home-care-services/resources-for-home-care-aides" target="_blank">Resources for Home Care Aides</a></li>
+                        <li><a href="https://www.cdss.ca.gov/inforesources/community-care/home-care-services/resources-for-seniors-and-families" target="_blank">Resources for Seniors and Families</a></li>
+                        <li><a href="https://www.ccld.dss.ca.gov/hcsregistry/registrysearch.aspx" target="_blank">Home Care Aide Registry</a></li>
+                    </ul>
+                </div></div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- PAGE DISCLAIMER -->
+
+    <div class="container_style_e">
+        <h5>Disclaimer</h5>
+        <div class="add_side_padding">
+
+            <b>Questions about this application contact:</b>
+            <ul style="padding-left: 10px;">
+
+                <li>Email: <a href="mailto:cclwebmaster@dss.ca.gov">cclwebmaster@dss.ca.gov</a></li>
+
+            </ul>
+
+            <br>
+            The Community Care Licensing Division of the California Department of Social Services has provided this document search application to provide the public with access to
+            information regarding facilities licensed by the Division.  Such information should only serve as an initial point of inquiry regarding the licensing status and regulatory
+            history of a licensed facility.  To obtain additional information concerning a specific facility, please contact the licensing office responsible for licensing and
+            inspection of the facility.<br>
+            <br>
+            The Department makes no claims, promises, or guarantees about the accuracy, completeness or adequacy of the documents accessible through the use of this application.
+            Accordingly, it disclaims any liability for any errors, omissions or misrepresentations contained in them.  No warranty of any kind, including, but not limited to, express,
+            implied, common law or statutory ones, is given with respect to the use of this application.   No warranties are given with respect to the non-infringement of third party
+            rights and the cybersecurity of the application. <br>
+            <br>
+            <strong>LIMITATION OF LIABILITY </strong><br>
+            CDSS IS NOT LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL OR CONSEQUENTIAL DAMAGES THAT RESULT FROM THE USE OF, OR THE INABILITY TO USE, THIS APPLICATION OR RELIANCE
+            UPON THE CONTENT OF THE MATERIALS ACCESSIBLE THROUGH THE USE OF THIS APPLICATION UNDER ANY CIRCUMSTANCES.<br>
+            <br>
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <!-- InstanceEndEditable -->
+</div>
+</div>
+
+
+</div>
+<!--include virtual="/ssi/footer_2.html" -->
+
+<!-- ui-view-anchor --><div ui-view="footer" autoscroll="false" class="ng-scope"><!--include virtual="/ssi/footer_2.html" -->
+
+<footer id="footer_2" class="clearfix ng-scope" ng-controller="footerController">
+    <stt-class>
+        <a ng-click="scrollToTop(1)">Back to Top</a> <a href="http://www.cdss.ca.gov/Conditions-of-Use">Conditions of Use</a> <a href="http://www.cdss.ca.gov/Privacy-Policy">Privacy Policy</a> <a href="http://www.cdss.ca.gov/Accessibility">Accessibility</a> <a href="http://www.cdss.ca.gov/Contact-Us">Contact Us</a>
+    </stt-class>
+    <p>
+    </p><div class="ng-binding">
+        Transparency v 1.0.1
+    </div>
+    <div>
+        Copyright © 2013-2014 State of California
+    </div>
+    <p></p>
+</footer>
+
+<div id="background_decorative" class="ng-scope">&nbsp;</div>
+</div>
+
+</div>
+</div>
+
+
+
+
+
+
+</body></html>

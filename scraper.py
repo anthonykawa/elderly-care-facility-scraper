@@ -8,6 +8,8 @@ import sys
 import csv
 import time
 import re
+import argparse
+import os
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
@@ -22,13 +24,20 @@ from selenium.webdriver.chrome.options import Options
 class ElderlyFacilityScraper:
     """Scraper for elderly care facilities in California."""
     
-    def __init__(self, city):
-        """Initialize the scraper with a city name."""
+    def __init__(self, city, output_dir=None):
+        """Initialize the scraper with a city name and optional output directory."""
         self.city = city
         self.base_url = "https://www.ccld.dss.ca.gov"
         self.facilities = []
         self.scraping_completed = False
-        self.filename = f"{self.city.lower().replace(' ', '-')}-elderly-facilities.csv"
+        self.output_dir = output_dir or os.getcwd()
+        
+        # Ensure output directory exists
+        if self.output_dir and not os.path.exists(self.output_dir):
+            os.makedirs(self.output_dir)
+        
+        filename = f"{self.city.lower().replace(' ', '-')}-elderly-facilities.csv"
+        self.filename = os.path.join(self.output_dir, filename)
         
         # Setup Chrome options
         chrome_options = Options()
@@ -308,17 +317,38 @@ class ElderlyFacilityScraper:
 
 def main():
     """Main entry point for the script."""
-    if len(sys.argv) < 2:
-        print("Usage: python scraper.py <city_name>")
-        print("Example: python scraper.py 'Los Angeles'")
-        sys.exit(1)
+    parser = argparse.ArgumentParser(
+        description='Scrape elderly care facilities in California cities.',
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog="""
+Examples:
+  python scraper.py "Los Angeles"
+  python scraper.py "San Francisco" --output-dir /path/to/folder
+  python scraper.py "Sacramento" -o ./output
+        """
+    )
     
-    city = sys.argv[1]
+    parser.add_argument(
+        'city',
+        type=str,
+        help='Name of the California city to search for facilities'
+    )
     
-    print(f"Starting scraper for {city}...")
+    parser.add_argument(
+        '-o', '--output-dir',
+        type=str,
+        default=None,
+        help='Directory where CSV file will be saved (default: current directory)'
+    )
+    
+    args = parser.parse_args()
+    
+    print(f"Starting scraper for {args.city}...")
+    if args.output_dir:
+        print(f"Output directory: {os.path.abspath(args.output_dir)}")
     print("=" * 50)
     
-    scraper = ElderlyFacilityScraper(city)
+    scraper = ElderlyFacilityScraper(args.city, args.output_dir)
     scraper.run()
     
     print("=" * 50)

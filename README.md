@@ -20,6 +20,7 @@ python scraper_gui.py
 
 The GUI provides:
 - Simple text input for city name
+- Output folder selection with browse button
 - Start/Stop buttons
 - Real-time progress updates
 - Output log viewer
@@ -34,6 +35,12 @@ python scraper.py <city_name>
 Example:
 ```bash
 python scraper.py "Los Angeles"
+```
+
+**Specify output directory:**
+```bash
+python scraper.py "Los Angeles" --output-dir /path/to/folder
+python scraper.py "Sacramento" -o ./output
 ```
 
 This will create a CSV file named `los-angeles-elderly-facilities.csv` with the facility details.

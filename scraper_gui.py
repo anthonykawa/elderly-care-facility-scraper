@@ -5,7 +5,7 @@ Cross-platform GUI application for scraping elderly care facilities in Californi
 """
 
 import tkinter as tk
-from tkinter import ttk, scrolledtext, messagebox
+from tkinter import ttk, scrolledtext, messagebox, filedialog
 import threading
 import sys
 import os
@@ -24,6 +24,7 @@ class ScraperGUI:
         
         # Variables
         self.city_var = tk.StringVar()
+        self.output_dir_var = tk.StringVar(value=os.getcwd())
         self.is_scraping = False
         self.scraper = None
         
@@ -61,6 +62,22 @@ class ScraperGUI:
         # Bind Enter key to start scraping
         self.city_entry.bind('<Return>', lambda e: self.start_scraping())
         
+        # Output directory input
+        output_label = ttk.Label(main_frame, text="Output Folder:", font=("Arial", 10))
+        output_label.grid(row=2, column=0, sticky=tk.W, pady=5)
+        
+        self.output_entry = ttk.Entry(main_frame, textvariable=self.output_dir_var, width=30, font=("Arial", 10))
+        self.output_entry.grid(row=2, column=1, sticky=(tk.W, tk.E), pady=5, padx=(5, 5))
+        
+        # Browse button
+        self.browse_button = ttk.Button(
+            main_frame,
+            text="Browse...",
+            command=self.browse_folder,
+            width=15
+        )
+        self.browse_button.grid(row=2, column=2, pady=5, padx=(5, 0))
+        
         # Start button
         self.start_button = ttk.Button(
             main_frame, 
@@ -68,7 +85,7 @@ class ScraperGUI:
             command=self.start_scraping,
             width=15
         )
-        self.start_button.grid(row=1, column=2, pady=5, padx=(5, 0))
+        self.start_button.grid(row=3, column=2, pady=5, padx=(5, 0))
         
         # Stop button (initially disabled)
         self.stop_button = ttk.Button(
@@ -78,15 +95,15 @@ class ScraperGUI:
             width=15,
             state=tk.DISABLED
         )
-        self.stop_button.grid(row=2, column=2, pady=5, padx=(5, 0))
+        self.stop_button.grid(row=4, column=2, pady=5, padx=(5, 0))
         
         # Progress label
         self.progress_label = ttk.Label(main_frame, text="Ready to scrape", font=("Arial", 9))
-        self.progress_label.grid(row=2, column=0, columnspan=2, sticky=tk.W, pady=5)
+        self.progress_label.grid(row=4, column=0, columnspan=2, sticky=tk.W, pady=5)
         
         # Output text area
         output_label = ttk.Label(main_frame, text="Output:", font=("Arial", 10))
-        output_label.grid(row=3, column=0, columnspan=3, sticky=tk.W, pady=(10, 5))
+        output_label.grid(row=5, column=0, columnspan=3, sticky=tk.W, pady=(10, 5))
         
         self.output_text = scrolledtext.ScrolledText(
             main_frame,
@@ -95,7 +112,7 @@ class ScraperGUI:
             font=("Courier", 9),
             wrap=tk.WORD
         )
-        self.output_text.grid(row=4, column=0, columnspan=3, sticky=(tk.W, tk.E, tk.N, tk.S), pady=(0, 10))
+        self.output_text.grid(row=6, column=0, columnspan=3, sticky=(tk.W, tk.E, tk.N, tk.S), pady=(0, 10))
         
         # Status bar
         self.status_bar = ttk.Label(
@@ -122,15 +139,46 @@ class ScraperGUI:
         """Update the progress label."""
         self.progress_label.config(text=message)
         self.root.update_idletasks()
+    
+    def browse_folder(self):
+        """Open folder browser dialog."""
+        folder = filedialog.askdirectory(
+            title="Select Output Folder",
+            initialdir=self.output_dir_var.get()
+        )
+        if folder:
+            self.output_dir_var.set(folder)
+            self.log_output(f"Output folder set to: {folder}")
         
     def start_scraping(self):
         """Start the scraping process in a separate thread."""
         city = self.city_var.get().strip()
+        output_dir = self.output_dir_var.get().strip()
         
         if not city:
             messagebox.showwarning("Input Required", "Please enter a city name.")
             self.city_entry.focus()
             return
+        
+        if not output_dir:
+            messagebox.showwarning("Output Folder Required", "Please select an output folder.")
+            return
+        
+        # Validate output directory
+        if not os.path.exists(output_dir):
+            result = messagebox.askyesno(
+                "Create Folder?",
+                f"The folder '{output_dir}' does not exist.\n\nDo you want to create it?"
+            )
+            if result:
+                try:
+                    os.makedirs(output_dir)
+                    self.log_output(f"Created output folder: {output_dir}")
+                except Exception as e:
+                    messagebox.showerror("Error", f"Could not create folder:\n\n{e}")
+                    return
+            else:
+                return
         
         if self.is_scraping:
             messagebox.showinfo("Already Running", "Scraping is already in progress.")
@@ -144,9 +192,11 @@ class ScraperGUI:
         self.start_button.config(state=tk.DISABLED)
         self.stop_button.config(state=tk.NORMAL)
         self.city_entry.config(state=tk.DISABLED)
+        self.output_entry.config(state=tk.DISABLED)
+        self.browse_button.config(state=tk.DISABLED)
         
         # Start scraping in a separate thread
-        thread = threading.Thread(target=self.run_scraper, args=(city,), daemon=True)
+        thread = threading.Thread(target=self.run_scraper, args=(city, output_dir), daemon=True)
         thread.start()
         
     def stop_scraping(self):
@@ -157,16 +207,17 @@ class ScraperGUI:
             # The scraper will be stopped when the driver quits
             # The thread will notice and exit gracefully
             
-    def run_scraper(self, city):
+    def run_scraper(self, city, output_dir):
         """Run the scraper (called in a separate thread)."""
         try:
             self.update_status(f"Scraping facilities in {city}...")
             self.update_progress("Initializing...")
             self.log_output(f"Starting scraper for {city}...")
+            self.log_output(f"Output folder: {output_dir}")
             self.log_output("=" * 50)
             
             # Create custom scraper with GUI logging
-            self.scraper = GUIElderlyFacilityScraper(city, self)
+            self.scraper = GUIElderlyFacilityScraper(city, self, output_dir)
             self.scraper.run()
             
             self.log_output("=" * 50)
@@ -196,15 +247,17 @@ class ScraperGUI:
             self.start_button.config(state=tk.NORMAL)
             self.stop_button.config(state=tk.DISABLED)
             self.city_entry.config(state=tk.NORMAL)
+            self.output_entry.config(state=tk.NORMAL)
+            self.browse_button.config(state=tk.NORMAL)
             self.scraper = None
 
 
 class GUIElderlyFacilityScraper(ElderlyFacilityScraper):
     """Extended scraper that logs to GUI instead of console."""
     
-    def __init__(self, city, gui):
+    def __init__(self, city, gui, output_dir=None):
         """Initialize with GUI reference."""
-        super().__init__(city)
+        super().__init__(city, output_dir)
         self.gui = gui
         
     def navigate_to_search(self):
